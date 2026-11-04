@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 拉美黑五作战地图 · 必上款清单</title>
+<meta name="description" content="2026 拉美黑五大促商家作战地图：历届爆款数据、GMV 峰值预测、必上款清单与备货节点倒计时。">
+<style>
+/* ============ 设计令牌 ============ */
+:root{
+  --ink:#1A0E08;
+  --ink-2:#5A3A2C;
+  --ink-3:#8A6A5A;
+  --paper:#FFF8F0;
+  --paper-2:#FFEEDC;
+  --card:#FFFFFF;
+  --red:#E01B10;
+  --red-deep:#A00C04;
+  --orange:#FF6A00;
+  --amber:#FFB020;
+  --gold:#FFD34D;
+  --green:#0B7A53;
+  --line:rgba(26,14,8,.13);
+  --shadow:0 22px 48px -26px rgba(130,35,0,.5);
+  --shadow-hard:8px 8px 0 0 rgba(26,14,8,.9);
+  --font-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,sans-serif;
+  --font-disp:"Impact","Haettenschweiler","Arial Narrow Bold","PingFang SC","Microsoft YaHei",sans-serif;
+  --font-mono:ui-monospace,"SF Mono",Consolas,"Courier New",monospace;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font-sans);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.6;
+  overflow-x:hidden;
+  font-feature-settings:"tnum";
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+::selection{background:var(--orange);color:#fff}
+
+/* 纸张质感 + 网格底纹 */
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:
+    radial-gradient(circle at 12% 8%,rgba(255,106,0,.10),transparent 42%),
+    radial-gradient(circle at 88% 18%,rgba(224,27,16,.09),transparent 40%),
+    repeating-linear-gradient(0deg,rgba(26,14,8,.035) 0 1px,transparent 1px 26px),
+    repeating-linear-gradient(90deg,rgba(26,14,8,.035) 0 1px,transparent 1px 26px);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.35;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/><feColorMatrix type='saturate' values='0'/></filter><rect width='120' height='120' filter='url(%23n)' opacity='.35'/></svg>");
+  mix-blend-mode:multiply;
+}
+.wrap{position:relative;z-index:2}
+.container{width:min(1240px,92vw);margin-inline:auto}
+
+/* ============ 免责声明条 ============ */
+.disclaimer{
+  position:relative;z-index:40;
+  background:#FFF3C4;color:#6B4A00;
+  border-bottom:1px solid rgba(150,110,0,.25);
+  font-size:12px;line-height:1.55;padding:8px 0;
+}
+.disclaimer .container{display:flex;gap:10px;align-items:flex-start}
+.disclaimer b{color:#8A5A00;white-space:nowrap}
+
+/* ============ 顶部导航 ============ */
+.nav{
+  position:sticky;top:0;z-index:900;
+  backdrop-filter:blur(14px);
+  background:rgba(255,248,240,.88);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{display:flex;align-items:center;gap:18px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.4px}
+.brand-mark{
+  width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+  background:linear-gradient(145deg,var(--red),var(--orange));
+  color:#fff;font-family:var(--font-disp);font-size:17px;letter-spacing:.5px;
+  box-shadow:0 8px 18px -8px rgba(224,27,16,.8);
+  transform:rotate(-6deg);
+}
+.brand-txt{display:flex;flex-direction:column;line-height:1.15}
+.brand-txt small{font-size:10px;font-weight:700;letter-spacing:2.2px;color:var(--ink-3)}
+.brand-txt span{font-size:15px}
+.nav-links{display:flex;gap:26px;margin-left:auto;font-size:13.5px;font-weight:700}
+.nav-links a{position:relative;padding:4px 0;color:var(--ink-2);transition:color .2s}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--orange);transition:width .28s}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{
+  margin-left:8px;display:flex;align-items:center;gap:10px;
+  background:var(--ink);color:#fff;padding:9px 18px;border-radius:999px;
+  font-size:13px;font-weight:800;transition:transform .2s,box-shadow .2s;
+}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 12px 24px -12px rgba(26,14,8,.9)}
+.nav-cta .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(255,211,77,.25);animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
+.nav-timer{font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--red);background:rgba(224,27,16,.08);padding:5px 10px;border-radius:8px;border:1px solid rgba(224,27,16,.16)}
+
+/* ============ 首屏 ============ */
+.hero{
+  position:relative;overflow:hidden;
+  padding:clamp(34px,5vw,64px) 0 clamp(40px,6vw,74px);
+  background:
+    radial-gradient(120% 90% at 84% -10%,rgba(255,106,0,.28),transparent 58%),
+    radial-gradient(90% 80% at 0% 110%,rgba(224,27,16,.16),transparent 60%),
+    linear-gradient(180deg,#FFF8F0,#FFEBD6 62%,#FFF8F0);
+}
+.hero::before{
+  content:"BLACK FRIDAY";
+  position:absolute;right:-2%;top:2%;z-index:0;
+  font-family:var(--font-disp);font-size:clamp(120px,19vw,280px);
+  line-height:.78;letter-spacing:-6px;color:transparent;
+  -webkit-text-stroke:1.6px rgba(224,27,16,.16);
+  transform:rotate(-4deg);pointer-events:none;user-select:none;white-space:nowrap;
+}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.18fr .82fr;gap:clamp(26px,4vw,52px);align-items:start}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:800;letter-spacing:2.4px;color:var(--red-deep);text-transform:uppercase;margin-bottom:16px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--red)}
+.hero h1{
+  font-size:clamp(40px,6.4vw,82px);font-weight:900;line-height:.98;letter-spacing:-3px;
+  margin-bottom:6px;
+}
+.hero h1 .strike{position:relative;display:inline-block;color:var(--ink)}
+.hero h1 .strike::after{content:"";position:absolute;left:-2%;right:-2%;top:52%;height:10px;background:var(--orange);opacity:.85;transform:rotate(-1.5deg);border-radius:2px}
+.hero h1 .hot{
+  display:inline-block;
+  background:linear-gradient(100deg,var(--red) 8%,var(--orange) 55%,#FF9A1F 92%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 6px 0 rgba(224,27,16,.14));
+}
+.hero-sub{margin-top:18px;font-size:clamp(14px,1.5vw,16.5px);color:var(--ink-2);max-width:34em;font-weight:500}
+.hero-sub b{color:var(--ink);font-weight:900}
+.hero-sub .hl{background:linear-gradient(180deg,transparent 58%,rgba(255,179,32,.55) 58%);padding:0 2px;font-weight:900;color:var(--ink)}
+
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:15px 26px;border-radius:14px;font-size:15px;font-weight:900;letter-spacing:.2px;
+  transition:transform .18s cubic-bezier(.2,.8,.3,1),box-shadow .18s,background .2s;
+  position:relative;overflow:hidden;
+}
+.btn-primary{
+  background:linear-gradient(120deg,var(--red),var(--orange));
+  color:#fff;box-shadow:0 14px 30px -14px rgba(224,27,16,.9);
+}
+.btn-primary::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,transparent 20%,rgba(255,255,255,.45) 45%,transparent 70%);
+  transform:translateX(-120%);transition:transform .6s;
+}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 36px -14px rgba(224,27,16,.95)}
+.btn-primary:hover::after{transform:translateX(120%)}
+.btn-ghost{background:#fff;color:var(--ink);border:2px solid var(--ink);box-shadow:4px 4px 0 0 var(--ink)}
+.btn-ghost:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 0 var(--ink)}
+.btn:active{transform:translateY(0)}
+.btn small{font-size:11px;font-weight:700;opacity:.75;display:block;letter-spacing:0}
+
+.hero-facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:24px;font-size:12.5px;color:var(--ink-2);font-weight:700}
+.hero-facts span{display:flex;align-items:center;gap:6px}
+.hero-facts i{width:6px;height:6px;background:var(--orange);border-radius:2px;transform:rotate(45deg);display:inline-block}
+
+/* 倒计时面板 */
+.count-card{
+  position:relative;background:linear-gradient(160deg,#231309,#160C06);
+  color:#FFF3E4;border-radius:24px;padding:24px;
+  box-shadow:0 30px 60px -30px rgba(60,15,0,.9),inset 0 1px 0 rgba(255,255,255,.12);
+  overflow:hidden;
+}
+.count-card::before{
+  content:"";position:absolute;inset:-40%;
+  background:conic-gradient(from 0deg,rgba(255,106,0,.35),transparent 25%,transparent 55%,rgba(224,27,16,.4),transparent 80%);
+  animation:spin 14s linear infinite;opacity:.55;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.count-in{position:relative;z-index:2}
+.count-top{display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:2px;font-weight:800;color:#FFC98A;text-transform:uppercase}
+.count-top .live{display:flex;align-items:center;gap:6px;color:#FFD34D}
+.count-top .live b{width:7px;height:7px;border-radius:50%;background:#FFD34D;animation:pulse 1.4s infinite}
+.count-label{margin-top:14px;font-size:13px;color:#E9C9AE;font-weight:700}
+.count-label b{color:#fff}
+.count-timer{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
+.count-cell{
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);
+  border-radius:12px;padding:10px 4px 8px;text-align:center;
+  backdrop-filter:blur(4px);
+}
+.count-cell b{display:block;font-family:var(--font-disp);font-size:clamp(26px,3.4vw,38px);line-height:1;letter-spacing:.5px;color:#fff;font-weight:400}
+.count-cell span{display:block;margin-top:6px;font-size:10px;letter-spacing:1.6px;color:#B9977E;font-weight:700}
+.count-foot{margin-top:14px;padding-top:12px;border-top:1px dashed rgba(255,255,255,.18);display:flex;justify-content:space-between;font-size:11.5px;color:#D8B69C;font-weight:700}
+.count-foot b{color:#FFD34D}
+.count-strip{
+  margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:8px;
+}
+.count-strip div{background:rgba(255,255,255,.06);border-left:2px solid var(--orange);padding:8px 10px;border-radius:0 8px 8px 0}
+.count-strip em{display:block;font-style:normal;font-size:10px;letter-spacing:1.2px;color:#B9977E;font-weight:800}
+.count-strip strong{font-size:13px;color:#fff}
+
+/* ============ 滚动播报条 ============ */
+.ticker{
+  position:relative;z-index:3;background:var(--ink);color:#FFF3E4;overflow:hidden;
+  border-top:3px solid var(--orange);border-bottom:3px solid var(--orange);
+}
+.ticker-track{display:flex;gap:0;width:max-content;animation:ticker 32s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ticker-item{display:flex;align-items:center;gap:12px;padding:11px 26px;font-size:12.5px;font-weight:800;letter-spacing:.4px;white-space:nowrap}
+.ticker-item i{width:5px;height:5px;background:var(--orange);border-radius:50%;display:inline-block}
+.ticker-item b{color:var(--gold)}
+
+/* ============ 通用 section ============ */
+.section{padding:clamp(52px,7vw,92px) 0;position:relative;scroll-margin-top:76px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:clamp(26px,3.4vw,40px);flex-wrap:wrap}
+.sec-tag{
+  display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:900;
+  letter-spacing:2.6px;color:var(--red);text-transform:uppercase;margin-bottom:12px;
+}
+.sec-tag b{font-family:var(--font-disp);font-size:15px;letter-spacing:0;background:var(--red);color:#fff;padding:1px 7px;border-radius:5px;font-weight:400}
+.sec-head h2{font-size:clamp(27px,3.8vw,46px);font-weight:900;letter-spacing:-1.6px;line-height:1.1}
+.sec-head h2 em{font-style:normal;color:var(--red)}
+.sec-desc{font-size:13.5px;color:var(--ink-3);max-width:30em;font-weight:600;line-height:1.7}
+
+/* ============ 数据看板 ============ */
+.insight-grid{display:grid;grid-template-columns:1.62fr .88fr;gap:18px}
+.panel{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  box-shadow:var(--shadow);padding:22px 22px 18px;position:relative;overflow:hidden;
+}
+.panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+.panel-title{font-size:15px;font-weight:900;letter-spacing:-.2px;display:flex;align-items:center;gap:8px}
+.panel-title i{width:4px;height:16px;background:linear-gradient(var(--red),var(--orange));border-radius:2px;display:inline-block}
+.panel-badge{font-size:10px;font-weight:900;letter-spacing:1.2px;padding:4px 9px;border-radius:6px;background:rgba(255,106,0,.1);color:#B23A00;border:1px solid rgba(255,106,0,.24)}
+.panel-badge.warn{background:rgba(224,27,16,.08);color:var(--red-deep);border-color:rgba(224,27,16,.22)}
+.panel-sub{font-size:11.5px;color:var(--ink-3);font-weight:600;margin-top:2px}
+.chart-wrap{position:relative;margin-top:14px}
+svg.chart{width:100%;height:auto;display:block;overflow:visible}
+.chart-tip{
+  position:absolute;pointer-events:none;background:var(--ink);color:#fff;border-radius:10px;
+  padding:8px 11px;font-size:11.5px;font-weight:700;line-height:1.5;opacity:0;transform:translate(-50%,-120%);
+  transition:opacity .15s;white-space:nowrap;z-index:6;box-shadow:0 12px 24px -12px rgba(0,0,0,.7);
+}
+.chart-tip b{display:block;font-family:var(--font-disp);font-size:17px;color:var(--gold);font-weight:400;letter-spacing:.3px}
+.chart-tip.on{opacity:1}
+.peak-note{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.peak-note span{font-size:11px;font-weight:800;color:var(--ink-2);background:var(--paper-2);border:1px solid rgba(255,106,0,.2);padding:5px 10px;border-radius:999px}
+.peak-note span b{color:var(--red)}
+
+.side-stack{display:flex;flex-direction:column;gap:14px}
+.year-bars{display:flex;align-items:flex-end;gap:12px;height:150px;margin-top:18px}
+.ybar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:7px;height:100%}
+.ybar .col{
+  width:100%;border-radius:8px 8px 3px 3px;position:relative;
+  background:linear-gradient(180deg,#FFB020,#FF6A00);
+  height:0;transition:height 1.1s cubic-bezier(.2,.9,.25,1);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.45);
+}
+.ybar .col.fc{
+  background:repeating-linear-gradient(135deg,#FF6A00 0 6px,#FF9A3D 6px 12px);
+  border:1px dashed rgba(160,12,4,.4);
+}
+.ybar .val{font-family:var(--font-disp);font-size:15px;letter-spacing:.4px;color:var(--ink);font-weight:400}
+.ybar .yr{font-size:10.5px;font-weight:800;color:var(--ink-3);letter-spacing:.5px}
+.ybar .col .top{position:absolute;top:-4px;left:50%;transform:translateX(-50%);width:8px;height:8px;border-radius:50%;background:#fff;border:2px solid var(--red)}
+
+.stat-list{display:grid;gap:10px;margin-top:4px}
+.stat{
+  display:flex;align-items:baseline;gap:10px;padding:10px 12px;border-radius:12px;
+  background:linear-gradient(100deg,rgba(255,238,220,.7),rgba(255,255,255,0));
+  border-left:3px solid var(--orange);
+}
+.stat b{font-family:var(--font-disp);font-size:26px;line-height:1;font-weight:400;color:var(--red);letter-spacing:.3px;min-width:64px}
+.stat span{font-size:12px;font-weight:700;color:var(--ink-2);line-height:1.45}
+.stat span em{font-style:normal;display:block;font-size:10.5px;color:var(--ink-3);font-weight:600}
+
+/* ============ 时间轴 ============ */
+.timeline-section{background:linear-gradient(180deg,#FFF8F0,#FFEAD3 40%,#FFF8F0)}
+.tl{position:relative;margin-top:10px}
+.tl-line{position:absolute;left:0;right:0;top:43px;height:3px;background:repeating-linear-gradient(90deg,rgba(224,27,16,.5) 0 12px,transparent 12px 22px)}
+.tl-track{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;position:relative;z-index:2}
+.tl-node{display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:0}
+.tl-node .dot{
+  width:54px;height:54px;border-radius:50%;display:grid;place-items:center;
+  background:#fff;border:3px solid var(--line);font-family:var(--font-disp);font-size:16px;color:var(--ink-3);
+  transition:transform .25s,box-shadow .25s,border-color .25s;
+  position:relative;z-index:2;
+}
+.tl-node.peak .dot{border-color:var(--red);color:var(--red);box-shadow:0 0 0 6px rgba(224,27,16,.1)}
+.tl-node.peak .dot::after{content:"";position:absolute;inset:-3px;border-radius:50%;border:3px solid var(--red);opacity:.5;animation:ring 2.4s infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.5}70%{transform:scale(1.5);opacity:0}100%{opacity:0}}
+.tl-node:hover .dot{transform:translateY(-4px) scale(1.04)}
+.tl-node .date{margin-top:12px;font-family:var(--font-disp);font-size:21px;letter-spacing:.6px;color:var(--ink);font-weight:400}
+.tl-node .date small{font-family:var(--font-sans);font-size:10px;font-weight:800;color:var(--ink-3);display:block;letter-spacing:1.4px}
+.tl-node .tt{font-size:12.5px;font-weight:900;margin-top:4px}
+.tl-node .ds{font-size:11px;color:var(--ink-3);font-weight:600;margin-top:3px;line-height:1.5;min-height:2.9em}
+.tl-node .cd{
+  margin-top:9px;font-family:var(--font-mono);font-size:11px;font-weight:800;
+  padding:4px 9px;border-radius:999px;background:rgba(26,14,8,.06);color:var(--ink-2);
+}
+.tl-node.peak .cd{background:rgba(224,27,16,.1);color:var(--red-deep)}
+.tl-node .cd.urgent{background:rgba(224,27,16,.14);color:var(--red-deep);animation:blink 1.9s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.55}}
+
+/* ============ 商品墙 ============ */
+.catalog{background:linear-gradient(180deg,#FFF8F0,#FFFCF7)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tab{
+  padding:9px 16px;border-radius:999px;font-size:12.5px;font-weight:800;
+  border:1.5px solid var(--line);background:#fff;color:var(--ink-2);
+  transition:all .2s;display:flex;align-items:center;gap:7px;
+}
+.tab b{font-family:var(--font-mono);font-size:10.5px;background:rgba(26,14,8,.07);padding:1px 6px;border-radius:999px;color:var(--ink-3)}
+.tab:hover{border-color:rgba(255,106,0,.5);color:var(--ink);transform:translateY(-1px)}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink);box-shadow:0 10px 22px -12px rgba(26,14,8,.8)}
+.tab.on b{background:rgba(255,255,255,.18);color:#FFD34D}
+
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pcard{
+  background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;
+  position:relative;transition:transform .28s cubic-bezier(.2,.8,.3,1),box-shadow .28s,border-color .28s;
+  display:flex;flex-direction:column;
+  opacity:0;transform:translateY(18px);
+}
+.pcard.in{opacity:1;transform:none}
+.pcard:hover{transform:translateY(-6px);box-shadow:0 26px 44px -26px rgba(130,35,0,.55);border-color:rgba(255,106,0,.45)}
+.pcard__media{position:relative;aspect-ratio:1/1;background:linear-gradient(150deg,#FFF1E2,#FFE3CC);overflow:hidden}
+.pcard__media img{width:100%;height:100%;object-fit:contain;transition:transform .5s cubic-bezier(.2,.8,.3,1);padding:6px}
+.pcard:hover .pcard__media img{transform:scale(1.06)}
+.pcard__media.noimg::after{
+  content:attr(data-fb);position:absolute;inset:0;display:grid;place-items:center;text-align:center;
+  font-size:12px;font-weight:900;color:rgba(160,90,50,.7);letter-spacing:1.5px;
+  background:repeating-linear-gradient(135deg,rgba(255,255,255,.5) 0 10px,transparent 10px 20px);
+}
+.pcard__rank{
+  position:absolute;left:9px;top:9px;z-index:3;
+  font-size:9.5px;font-weight:900;letter-spacing:.6px;
+  background:var(--ink);color:#FFD34D;padding:4px 8px;border-radius:6px;
+  box-shadow:0 6px 14px -8px rgba(0,0,0,.8);
+}
+.pcard__rank.new{background:linear-gradient(100deg,var(--red),var(--orange));color:#fff}
+.pcard__heat{
+  position:absolute;right:9px;top:9px;z-index:3;width:46px;height:46px;border-radius:50%;
+  display:grid;place-items:center;text-align:center;line-height:1;
+  background:rgba(255,255,255,.94);border:2px solid var(--orange);
+  font-family:var(--font-disp);font-size:17px;color:var(--red-deep);
+  box-shadow:0 8px 18px -10px rgba(224,27,16,.8);
+}
+.pcard__heat small{display:block;font-family:var(--font-sans);font-size:7.5px;font-weight:800;letter-spacing:.5px;color:var(--ink-3);margin-top:2px}
+.pcard__body{padding:12px 13px 14px;display:flex;flex-direction:column;gap:7px;flex:1}
+.pcard__leaf{font-size:13.5px;font-weight:900;letter-spacing:-.2px;display:flex;align-items:center;gap:6px}
+.pcard__leaf i{width:5px;height:5px;border-radius:1px;background:var(--orange);transform:rotate(45deg);flex:none}
+.pcard__feat{font-size:11px;color:var(--ink-3);font-weight:600;line-height:1.55;flex:1;min-height:2.9em}
+.pcard__row{display:flex;align-items:center;justify-content:space-between;gap:6px;padding-top:8px;border-top:1px dashed rgba(26,14,8,.1)}
+.pcard__grow{font-family:var(--font-mono);font-size:11.5px;font-weight:800;color:var(--green);display:flex;align-items:center;gap:3px}
+.pcard__grow.old{color:var(--ink-3)}
+.pcard__grow::before{content:"";width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-bottom:6px solid currentColor}
+.pcard__grow.old::before{display:none}
+.pcard__stock{font-size:9.5px;font-weight:900;letter-spacing:.4px;padding:3px 7px;border-radius:5px;background:rgba(224,27,16,.09);color:var(--red-deep);white-space:nowrap}
+.pcard__stock.ok{background:rgba(11,122,83,.09);color:var(--green)}
+.catalog-foot{
+  display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;
+  margin-top:24px;padding:18px 20px;border-radius:16px;background:#fff;border:1px dashed rgba(224,27,16,.3);
+}
+.catalog-foot .txt{font-size:12.5px;font-weight:700;color:var(--ink-2)}
+.catalog-foot .txt b{color:var(--red)}
+.catalog-note{font-size:11px;color:var(--ink-3);font-weight:600;margin-top:14px;line-height:1.7}
+
+/* 内部资料声明 */
+.confid{
+  position:relative;margin-top:20px;padding:18px 22px;border-radius:16px;overflow:hidden;
+  display:flex;gap:18px;align-items:center;justify-content:space-between;
+  background:linear-gradient(100deg,#FFF3E4,#FFFBF6 60%,#FFEFE0);
+  border:1.5px dashed rgba(224,27,16,.42);
+}
+.confid::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(45deg,rgba(224,27,16,.045) 0 10px,transparent 10px 26px);
+}
+.confid-in{position:relative;z-index:2;max-width:62em}
+.confid-k{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:12.5px;font-weight:900;letter-spacing:.5px;color:var(--red-deep);
+}
+.confid-k::before{content:"";width:6px;height:6px;border-radius:1px;background:var(--red);transform:rotate(45deg)}
+.confid p{margin-top:7px;font-size:11.5px;line-height:1.75;font-weight:600;color:var(--ink-2)}
+.confid p b{color:var(--red);font-weight:900}
+.confid-stamp{
+  position:relative;z-index:2;flex:none;transform:rotate(-7deg);
+  padding:7px 12px;border:2.5px solid rgba(224,27,16,.62);border-radius:9px;
+  color:rgba(224,27,16,.82);font-size:14px;font-weight:900;letter-spacing:3px;
+  white-space:nowrap;
+}
+
+/* ============ 行动区 ============ */
+.action{
+  position:relative;overflow:hidden;color:#FFF6EC;
+  background:
+    radial-gradient(90% 80% at 15% 0%,rgba(255,106,0,.4),transparent 55%),
+    radial-gradient(80% 70% at 90% 100%,rgba(224,27,16,.42),transparent 55%),
+    linear-gradient(155deg,#2A1409,#160B05 55%,#2E1206);
+  padding:clamp(54px,7vw,90px) 0;
+}
+.action::before{
+  content:"";position:absolute;inset:0;opacity:.12;
+  background:repeating-linear-gradient(45deg,#FFD34D 0 12px,transparent 12px 46px);
+  pointer-events:none;
+}
+.action .container{position:relative;z-index:2}
+.action-head{max-width:770px}
+.action .sec-tag{color:var(--gold)}
+.action .sec-tag b{background:var(--gold);color:#2A1409}
+.action h2{font-size:clamp(30px,4.6vw,56px);font-weight:900;letter-spacing:-2px;line-height:1.06;color:#fff}
+.action h2 em{font-style:normal;background:linear-gradient(100deg,#FFD34D,#FF8A2B);-webkit-background-clip:text;background-clip:text;color:transparent}
+.action p.lead{margin-top:14px;font-size:14.5px;color:#E7C9B2;font-weight:600;max-width:40em}
+
+.action-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.step{
+  background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;padding:20px;backdrop-filter:blur(6px);
+  transition:transform .25s,border-color .25s,background .25s;
+}
+.step:hover{transform:translateY(-5px);border-color:rgba(255,211,77,.5);background:rgba(255,255,255,.09)}
+.step .no{font-family:var(--font-disp);font-size:34px;color:rgba(255,211,77,.55);line-height:1;letter-spacing:1px}
+.step h3{margin-top:10px;font-size:16px;font-weight:900;letter-spacing:-.2px;color:#fff}
+.step p{margin-top:7px;font-size:12px;color:#CFAF97;font-weight:600;line-height:1.7}
+.step .tag{display:inline-block;margin-top:12px;font-size:10px;font-weight:900;letter-spacing:1px;padding:4px 8px;border-radius:5px;background:rgba(255,211,77,.14);color:var(--gold)}
+
+.action-bar{
+  margin-top:26px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+  border-radius:20px;padding:22px;display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;
+}
+.slot-top{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;font-weight:800;color:#E7C9B2}
+.slot-top b{font-family:var(--font-disp);font-size:22px;color:var(--gold);font-weight:400;letter-spacing:.6px}
+.slot-track{height:14px;border-radius:999px;background:rgba(255,255,255,.1);margin-top:10px;overflow:hidden;position:relative}
+.slot-fill{height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,#FFD34D,#FF6A00 70%,#E01B10);transition:width 1.4s cubic-bezier(.2,.9,.25,1)}
+.slot-hint{margin-top:9px;font-size:11px;color:#B9957E;font-weight:600}
+.slot-hint b{color:#FFD34D}
+.action-btns{display:flex;flex-direction:column;gap:10px}
+.btn-gold{background:linear-gradient(100deg,#FFD34D,#FFB020);color:#2A1409;box-shadow:0 16px 34px -16px rgba(255,176,32,.9)}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 22px 40px -16px rgba(255,176,32,1)}
+.btn-line{background:transparent;color:#FFF3E4;border:1.5px solid rgba(255,255,255,.3)}
+.btn-line:hover{border-color:#FFD34D;color:#FFD34D;transform:translateY(-2px)}
+.action-fine{margin-top:20px;font-size:11px;color:#9E7F69;font-weight:600;line-height:1.7}
+
+/* ============ 页脚 ============ */
+.footer{background:var(--ink);color:#C8B2A2;padding:26px 0 26px;font-size:12px;position:relative;z-index:2}
+.footer-in{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between;align-items:flex-start}
+.footer h4{color:#FFF3E4;font-size:14px;font-weight:900;margin-bottom:8px;letter-spacing:.2px}
+.footer p{line-height:1.8;max-width:52em;color:#9E8371;font-weight:600}
+.footer .brand-txt small{color:#9E8371}
+.footer .brand-txt span{color:#FFF3E4}
+.footer-bottom{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#82695A;font-size:11px;font-weight:600}
+
+/* ============ 浮动元素 ============ */
+.to-top{
+  position:fixed;right:20px;bottom:88px;z-index:1200;width:46px;height:46px;border-radius:14px;
+  background:#fff;border:1.5px solid var(--line);box-shadow:0 14px 30px -16px rgba(0,0,0,.5);
+  display:grid;place-items:center;opacity:0;visibility:hidden;transform:translateY(12px);
+  transition:all .25s;color:var(--ink);
+}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.float-cta{
+  position:fixed;right:20px;bottom:22px;z-index:1200;
+  display:flex;align-items:center;gap:10px;padding:13px 19px;border-radius:999px;
+  background:linear-gradient(110deg,var(--red),var(--orange));color:#fff;
+  font-size:13.5px;font-weight:900;box-shadow:0 18px 34px -16px rgba(224,27,16,.95);
+  transition:transform .22s,box-shadow .22s;
+}
+.float-cta:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 24px 44px -18px rgba(224,27,16,1)}
+.float-cta b{font-family:var(--font-mono);font-size:11px;background:rgba(0,0,0,.2);padding:2px 7px;border-radius:999px;font-weight:800}
+
+.toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,26px);z-index:2000;
+  background:var(--ink);color:#fff;padding:13px 20px;border-radius:13px;
+  font-size:13px;font-weight:800;box-shadow:0 22px 40px -18px rgba(0,0,0,.85);
+  opacity:0;visibility:hidden;transition:all .28s;display:flex;align-items:center;gap:9px;max-width:90vw;
+}
+.toast.on{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.toast i{width:7px;height:7px;border-radius:50%;background:var(--gold);flex:none}
+
+/* 水印 */
+.watermark{
+  position:fixed;inset:-20%;z-index:1100;pointer-events:none;user-select:none;
+  opacity:.055;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;
+  transform:rotate(-45deg);overflow:hidden;
+}
+.watermark span{
+  display:block;white-space:nowrap;font-size:19px;font-weight:800;letter-spacing:2px;
+  color:#7A1200;padding:26px 44px;
+}
+
+/* 滚动出现 */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.8,.3,1),transform .7s cubic-bezier(.2,.8,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ 响应式 ============ */
+@media(max-width:1080px){
+  .insight-grid{grid-template-columns:1fr}
+  .pgrid{grid-template-columns:repeat(3,1fr)}
+  .action-grid{grid-template-columns:1fr 1fr}
+  .action-bar{grid-template-columns:1fr}
+}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero::before{font-size:34vw;top:auto;bottom:2%;opacity:.55}
+  .nav-links,.nav-timer{display:none}
+  .nav-cta{margin-left:auto}
+  .tl-track{grid-template-columns:repeat(3,1fr);gap:22px 8px}
+  .tl-line{display:none}
+  .tl-node .dot{width:46px;height:46px;font-size:14px}
+  .pgrid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .action-grid{grid-template-columns:1fr}
+  .to-top{bottom:82px}
+  .pcard__feat{min-height:3.6em}
+}
+@media(max-width:520px){
+  .container{width:94vw}
+  .count-card{padding:18px}
+  .count-cell b{font-size:26px}
+  .hero h1{letter-spacing:-2px}
+  .sec-head h2{letter-spacing:-1px}
+  .pgrid{grid-template-columns:1fr 1fr;gap:10px}
+  .pcard__body{padding:10px}
+  .pcard__leaf{font-size:12.5px}
+  .pcard__heat{width:40px;height:40px;font-size:15px}
+  .float-cta{right:12px;bottom:14px;padding:11px 15px;font-size:12.5px}
+  .to-top{right:12px;bottom:74px;width:42px;height:42px}
+  .confid{padding:15px 16px;gap:10px}
+  .confid-stamp{display:none}
+  .catalog-foot{flex-direction:column;align-items:stretch}
+  .catalog-foot .btn{justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- 免责声明 -->
+<div class="disclaimer">
+  <div class="container">
+    <b>免责声明</b>
+    <span>以下热卖元素为商家经验分享，仅供商家选品参考。商家须自行确认所使用的元素不侵犯任何第三方知识产权、不违反相关法律法规规定。平台不对商家商品承担合法性审查义务，相关法律责任由商家自行承担。</span>
+  </div>
+</div>
+
+<!-- 导航 -->
+<header class="nav">
+  <div class="container nav-in">
+    <a class="brand" href="#top">
+      <span class="brand-mark">BF</span>
+      <span class="brand-txt"><small>LATAM 2026</small><span>黑五作战室</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#insight">数据战报</a>
+      <a href="#timeline">关键节点</a>
+      <a href="#catalog">必上款清单</a>
+      <a href="#action">上新通道</a>
+    </nav>
+    <div class="nav-timer" id="navTimer">--天 --:--:--</div>
+    <a class="nav-cta" href="https://agentseller.temu.com/goods/create/category" target="_blank" rel="noopener"><span class="dot"></span>立即上新</a>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">2026 拉美黑五 · 商家作战地图</div>
+        <h1>
+          黑五<span class="strike">不备货</span><br>
+          <span class="hot">一年白干</span>
+        </h1>
+        <p class="hero-sub">
+          11.27 开抢、11.28 <b>GMV 峰值</b>、11.30 网一、12.1 <b>二次峰值</b>。
+          全年最集中的 <span class="hl">4 个爆单日</span>已经排上日程 ——
+          谁先上新，谁先吃到这波流量，坑位先到先得。
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-jump="#catalog">
+            看黑五必上款清单
+            <small>300 款 2025 黑五爆款画像</small>
+          </button>
+          <a class="btn btn-ghost" href="#action">抢占流量入口 →</a>
+        </div>
+        <div class="hero-facts">
+          <span><i></i>历届黑五爆款 300 款</span>
+          <span><i></i>2026 增长榜单 400 款</span>
+          <span><i></i>增长品占比 58.5%</span>
+          <span><i></i>类目最高环比 +491.41</span>
+        </div>
+      </div>
+
+      <aside class="count-card">
+        <div class="count-in">
+          <div class="count-top">
+            <span>COUNTDOWN TO BFCM</span>
+            <span class="live"><b></b>LIVE</span>
+          </div>
+          <div class="count-label">距离 <b>11.27 黑五开抢</b> 还有</div>
+          <div class="count-timer" id="heroTimer">
+            <div class="count-cell"><b id="cdD">--</b><span>DAYS</span></div>
+            <div class="count-cell"><b id="cdH">--</b><span>HRS</span></div>
+            <div class="count-cell"><b id="cdM">--</b><span>MIN</span></div>
+            <div class="count-cell"><b id="cdS">--</b><span>SEC</span></div>
+          </div>
+          <div class="count-strip">
+            <div><em>PEAK 01</em><strong>11.28 · GMV 峰值</strong></div>
+            <div><em>PEAK 02</em><strong>12.01 · 二次冲高</strong></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 播报条 -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+
+  <!-- 数据战报 -->
+  <section class="section" id="insight">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div>
+          <div class="sec-tag"><b>01</b> DATA INSIGHTS</div>
+          <h2>黑五的钱，<em>只流向备好货的人</em></h2>
+        </div>
+        <p class="sec-desc">
+          以下曲线按历年黑五节奏拟合，
+          峰值日集中于 <b>11.28</b> 与 <b>12.01</b> —— 上新时间点，决定你吃到哪一段流量。
+        </p>
+      </div>
+
+      <div class="insight-grid">
+        <!-- 主图 -->
+        <div class="panel reveal">
+          <div class="panel-head">
+            <div>
+              <div class="panel-title"><i></i>2026 黑五周期 GMV 走势预测</div>
+              <div class="panel-sub">11.20 - 12.02 ｜ 纵轴为对平日的 GMV 倍率</div>
+            </div>
+            <span class="panel-badge warn">峰值预测</span>
+          </div>
+          <div class="chart-wrap" id="chartWrap">
+            <svg class="chart" id="gmvChart" viewBox="0 0 980 400" role="img" aria-label="黑五周期GMV走势预测曲线"></svg>
+            <div class="chart-tip" id="chartTip"></div>
+          </div>
+          <div class="peak-note">
+            <span>11.27 开抢 <b>4.6x</b></span>
+            <span>11.28 峰值 <b>6.2x</b></span>
+            <span>11.30 网一 <b>5.4x</b></span>
+            <span>12.01 二次峰值 <b>5.9x</b></span>
+          </div>
+        </div>
+
+        <!-- 侧栏 -->
+        <div class="side-stack">
+          <div class="panel reveal">
+            <div class="panel-head">
+              <div>
+                <div class="panel-title"><i></i>历届黑五爆款销量指数</div>
+                <div class="panel-sub">以 2022 年为 1.0x 基准</div>
+              </div>
+            </div>
+            <div class="year-bars" id="yearBars">
+              <div class="ybar"><div class="col" data-h="30" style="--h:30%"><span class="top"></span></div><div class="val">1.0x</div><div class="yr">2022</div></div>
+              <div class="ybar"><div class="col" data-h="45" style="--h:45%"><span class="top"></span></div><div class="val">1.4x</div><div class="yr">2023</div></div>
+              <div class="ybar"><div class="col" data-h="60" style="--h:60%"><span class="top"></span></div><div class="val">1.9x</div><div class="yr">2024</div></div>
+              <div class="ybar"><div class="col" data-h="77" style="--h:77%"><span class="top"></span></div><div class="val">2.4x</div><div class="yr">2025</div></div>
+              <div class="ybar"><div class="col fc" data-h="100" style="--h:100%"><span class="top"></span></div><div class="val">3.2x</div><div class="yr">2026E</div></div>
+            </div>
+          </div>
+
+          <div class="panel reveal">
+            <div class="stat-list">
+              <div class="stat"><b>4.6x</b><span>大促日 GMV 可达平日 4.6 倍<em>峰值日（11.28）最高约 6.2 倍</em></span></div>
+              <div class="stat"><b>58.5%</b><span>2026 榜单中环比正增长商品占比<em>234 / 400 款仍在涨</em></span></div>
+              <div class="stat"><b>94%</b><span>2025 黑五彩妆榜中礼盒 / 套装占比<em>送礼场景最抗跌，决定客单价</em></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="catalog-note">GMV 走势与销量指数为历年大促节奏示意，非官方口径。</p>
+    </div>
+  </section>
+
+  <!-- 时间轴 -->
+  <section class="section timeline-section" id="timeline">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div>
+          <div class="sec-tag"><b>02</b> KEY MILESTONES</div>
+          <h2>四个爆单日，<em>一步慢步步慢</em></h2>
+        </div>
+        <p class="sec-desc">
+          从上新截止到二次峰值，只剩 5 个关键节点。每错过一个，就少一段被平台流量倾斜的机会。
+        </p>
+      </div>
+
+      <div class="tl">
+        <div class="tl-line"></div>
+        <div class="tl-track" id="tlTrack"></div>
+      </div>
+
+      <div class="catalog-foot reveal" style="margin-top:30px">
+        <div class="txt">⏰ 现在最该做的一件事：<b>把必上款备货单提交、链接上架、库存拉满</b>。开抢后再补，只能看着别人爆。</div>
+        <a class="btn btn-primary" href="https://agentseller.temu.com/goods/create/category" target="_blank" rel="noopener">立即上新 · 抢节点</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 商品墙 -->
+  <section class="section catalog" id="catalog">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div>
+          <div class="sec-tag"><b>03</b> MUST-LAUNCH LIST</div>
+          <h2>黑五<em>必上款清单</em></h2>
+        </div>
+      </div>
+
+      <div class="tabs reveal" id="tabs">
+        <button class="tab on" data-cat="all">全部 <b>300</b></button>
+        <button class="tab" data-cat="yanbu">眼部上新 <b>200</b></button>
+        <button class="tab" data-cat="shenti">身体彩妆 <b>100</b></button>
+      </div>
+
+      <div class="pgrid" id="pgrid"></div>
+
+      <div class="catalog-foot reveal">
+        <div class="txt">已为你整理好 <b>300 款必上款</b>　·　建议优先上新热度 ≥ 90 的款式</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn btn-ghost" id="copyList" style="padding:11px 18px;font-size:13px">复制必上款清单</button>
+          <a class="btn btn-primary" href="https://agentseller.temu.com/goods/create/category" target="_blank" rel="noopener" style="padding:11px 18px;font-size:13px">一键锁定坑位</a>
+        </div>
+      </div>
+
+      <div class="confid reveal">
+        <div class="confid-in">
+          <div class="confid-k">迢之分享财富秘籍</div>
+          <p><b>请勿外传。</b>商品热卖元素为商家经验分享，仅供商家选品参考。商家须自行确认所使用的元素不侵犯任何第三方知识产权、不违反相关法律法规规定。平台不对商家商品承担合法性审查义务，相关法律责任由商家自行承担。</p>
+        </div>
+        <span class="confid-stamp">请勿外传</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 行动区 -->
+  <section class="action" id="action">
+    <div class="container">
+      <div class="action-head reveal">
+        <div class="sec-tag"><b>04</b> ACT NOW</div>
+        <h2>今年黑五，<br><em>别做那个“来不及”的商家</em></h2>
+        <p class="lead">
+          平台流量在开抢前就已完成分配：上新早、上新全、库存深的链接，才有资格进入大促主推池。
+          现在动手，还赶得上 11.28 的第一波峰值。
+        </p>
+      </div>
+
+      <div class="action-grid">
+        <div class="step reveal">
+          <div class="no">01</div>
+          <h3>选款 · 照着清单排产</h3>
+          <p>按热度排序，优先眼影、体绘、面部装饰贴与礼盒套装；同款多 SKC 覆盖价格带。</p>
+          <span class="tag">建议 300 款中至少上 20 款</span>
+        </div>
+        <div class="step reveal">
+          <div class="no">02</div>
+          <h3>备货 · 按峰值备足 3-5 倍</h3>
+          <p>爆款按日常销量 3-5 倍备货，礼盒与套装可再上浮；断货会把坑位直接让给对手。</p>
+          <span class="tag">库存告急 · 断货即丢坑位</span>
+        </div>
+        <div class="step reveal">
+          <div class="no">03</div>
+          <h3>上架 · 11.20 前完成</h3>
+          <p>标题、主图、类目一次到位；节日元素前置到主图第一屏，转化率差一倍。</p>
+          <span class="tag">上架截止 11.20 · 错过再等一年</span>
+        </div>
+      </div>
+
+      <div class="action-bar reveal">
+        <div>
+          <div class="slot-top"><span>首批大促坑位锁定进度</span><span><b id="slotNum">178</b> / 200</span></div>
+          <div class="slot-track"><div class="slot-fill" id="slotFill"></div></div>
+          <div class="slot-hint">仅剩 <b>22</b> 个坑位 · 每次点击锁定 <b>1</b> 个意向坑位，我们会按提交顺序排期</div>
+        </div>
+        <div class="action-btns">
+          <a class="btn btn-gold" id="lockSlot" href="https://agentseller.temu.com/goods/create/category" target="_blank" rel="noopener">立即上新 · 锁定爆款链接</a>
+          <a class="btn btn-line" href="#catalog">再核对一遍必上款清单</a>
+        </div>
+      </div>
+
+      <p class="action-fine">
+        * 坑位进度、剩余库存为运营节奏示意，用于说明大促资源紧张程度；实际资源以平台招商公告与你的对接运营确认为准。
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2026 黑五作战室 · 数据仅供选品参考，最终以平台公告为准</span>
+        <span>页面免责声明见页面顶部</span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<!-- 水印 -->
+<div class="watermark" id="watermark" aria-hidden="true"></div>
+
+<!-- 浮动按钮 -->
+<button class="to-top" id="toTop" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+<a class="float-cta" href="https://agentseller.temu.com/goods/create/category" target="_blank" rel="noopener">立即上新 <b id="floatTimer">--天</b></a>
+<div class="toast" id="toast"><i></i><span id="toastTxt"></span></div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ================= 倒计时 ================= */
+  var BF_START = new Date("2026-11-27T00:00:00+08:00").getTime();
+
+  function pad(n){ return n < 10 ? "0" + n : "" + n; }
+
+  function tick(){
+    var now = Date.now();
+    var left = Math.max(0, BF_START - now);
+    var d = Math.floor(left / 86400000);
+    var h = Math.floor(left % 86400000 / 3600000);
+    var m = Math.floor(left % 3600000 / 60000);
+    var s = Math.floor(left % 60000 / 1000);
+
+    setText("cdD", pad(d));
+    setText("cdH", pad(h));
+    setText("cdM", pad(m));
+    setText("cdS", pad(s));
+    setText("navTimer", d + "天 " + pad(h) + ":" + pad(m) + ":" + pad(s));
+    setText("floatTimer", d + "天");
+
+    renderTimeline();
+  }
+
+  function setText(id, txt){
+    var el = document.getElementById(id);
+    if(el) el.textContent = txt;
+  }
+
+  /* ================= 关键节点 ================= */
+  var NODES = [
+    { d:"11.20", h:23, t:"上新截止", ds:"链接上架完成，才能进主推池", peak:false, tag:"T-7" },
+    { d:"11.27", h:0,  t:"黑五开抢", ds:"首发流量池开启，第一波爆发", peak:true,  tag:"BF" },
+    { d:"11.28", h:20, t:"GMV 峰值", ds:"全年单日最高峰，主推位决胜", peak:true,  tag:"PEAK" },
+    { d:"11.30", h:0,  t:"网购星期一", ds:"网一承接，二次冲量窗口", peak:false, tag:"CM" },
+    { d:"12.01", h:20, t:"二次峰值", ds:"大促收尾冲刺，清库存最佳", peak:true,  tag:"PEAK" }
+  ];
+
+  function nodeTime(n){
+    var hh = n.h < 10 ? "0" + n.h : "" + n.h;
+    return new Date("2026-" + n.d.replace(".", "-") + "T" + hh + ":00:00+08:00").getTime();
+  }
+
+  function renderTimeline(){
+    var track = document.getElementById("tlTrack");
+    var now = Date.now();
+    var html = "";
+    NODES.forEach(function(n, i){
+      var ts = nodeTime(n);
+      var diff = ts - now;
+      var cdTxt, urgent = false;
+      if(diff <= 0){
+        cdTxt = "已过节点";
+      }else{
+        var days = Math.ceil(diff / 86400000);
+        if(days <= 1){
+          var hrs = Math.floor(diff / 3600000);
+          cdTxt = hrs > 0 ? ("倒计时 " + hrs + " 小时") : "即将开始";
+          urgent = true;
+        }else{
+          cdTxt = "倒计时 " + days + " 天";
+          urgent = days <= 10;
+        }
+      }
+      html += '<div class="tl-node' + (n.peak ? " peak" : "") + '">' +
+                '<div class="dot">' + (i + 1) + '</div>' +
+                '<div class="date">' + n.d + '<small>' + n.tag + '</small></div>' +
+                '<div class="tt">' + n.t + '</div>' +
+                '<div class="ds">' + n.ds + '</div>' +
+                '<div class="cd' + (urgent ? " urgent" : "") + '">' + cdTxt + '</div>' +
+              '</div>';
+    });
+    if(track.dataset.sig !== html){
+      track.innerHTML = html;
+      track.dataset.sig = html;
+    }
+  }
+
+  /* ================= GMV 曲线 ================= */
+  var SERIES = [
+    { d:"11.20", v:1.0 }, { d:"11.21", v:1.1 }, { d:"11.22", v:1.15 },
+    { d:"11.23", v:1.25 }, { d:"11.24", v:1.4 }, { d:"11.25", v:1.6 },
+    { d:"11.26", v:2.1 }, { d:"11.27", v:4.6 }, { d:"11.28", v:6.2 },
+    { d:"11.29", v:4.2 }, { d:"11.30", v:5.4 }, { d:"12.01", v:5.9 },
+    { d:"12.02", v:2.6 }
+  ];
+  var PEAKS = { 7:"开抢", 8:"峰值", 10:"网一", 11:"二次峰值" };
+
+  function drawChart(){
+    var svg = document.getElementById("gmvChart");
+    if(!svg) return;
+    var W = 980, H = 400, padL = 52, padR = 26, padT = 42, padB = 58;
+    var maxV = 7, iw = W - padL - padR, ih = H - padT - padB;
+    var x = function(i){ return padL + iw * i / (SERIES.length - 1); };
+    var y = function(v){ return padT + ih * (1 - v / maxV); };
+    var pts = SERIES.map(function(p, i){ return [x(i), y(p.v)]; });
+
+    function smooth(list){
+      var d = "M" + list[0][0].toFixed(1) + "," + list[0][1].toFixed(1);
+      for(var i = 0; i < list.length - 1; i++){
+        var p0 = list[i - 1] || list[i], p1 = list[i], p2 = list[i + 1], p3 = list[i + 2] || p2;
+        var c1x = p1[0] + (p2[0] - p0[0]) / 6, c1y = p1[1] + (p2[1] - p0[1]) / 6;
+        var c2x = p2[0] - (p3[0] - p1[0]) / 6, c2y = p2[1] - (p3[1] - p1[1]) / 6;
+        d += " C" + c1x.toFixed(1) + "," + c1y.toFixed(1) + " " + c2x.toFixed(1) + "," + c2y.toFixed(1) + " " + p2[0].toFixed(1) + "," + p2[1].toFixed(1);
+      }
+      return d;
+    }
+
+    var line = smooth(pts);
+    var area = line + " L" + x(SERIES.length - 1).toFixed(1) + "," + (padT + ih) + " L" + padL + "," + (padT + ih) + " Z";
+
+    var g = '<defs>' +
+      '<linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">' +
+        '<stop offset="0%" stop-color="#FF6A00" stop-opacity=".55"/>' +
+        '<stop offset="55%" stop-color="#FF9A1F" stop-opacity=".16"/>' +
+        '<stop offset="100%" stop-color="#FFB020" stop-opacity="0"/>' +
+      '</linearGradient>' +
+      '<linearGradient id="lineStroke" x1="0" y1="0" x2="1" y2="0">' +
+        '<stop offset="0%" stop-color="#FFB020"/><stop offset="45%" stop-color="#FF6A00"/><stop offset="100%" stop-color="#E01B10"/>' +
+      '</linearGradient>' +
+    '</defs>';
+
+    /* 网格 */
+    for(var v = 0; v <= maxV; v += 2){
+      g += '<line x1="' + padL + '" y1="' + y(v) + '" x2="' + (W - padR) + '" y2="' + y(v) + '" stroke="rgba(26,14,8,.08)" stroke-dasharray="4 6"/>';
+      g += '<text x="' + (padL - 12) + '" y="' + (y(v) + 4) + '" text-anchor="end" font-size="11" font-weight="700" fill="rgba(90,58,44,.65)" font-family="ui-monospace,Menlo,monospace">' + v + 'x</text>';
+    }
+
+    /* 峰值竖线 */
+    Object.keys(PEAKS).forEach(function(k){
+      var i = parseInt(k, 10), px = x(i);
+      g += '<line x1="' + px + '" y1="' + (padT - 6) + '" x2="' + px + '" y2="' + (padT + ih) + '" stroke="#E01B10" stroke-opacity=".22" stroke-dasharray="3 5"/>';
+    });
+
+    /* 面积 + 折线 */
+    g += '<path d="' + area + '" fill="url(#areaFill)"/>';
+    g += '<path id="gmvLine" d="' + line + '" fill="none" stroke="url(#lineStroke)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>';
+
+    /* 点 + 峰值标注 */
+    SERIES.forEach(function(p, i){
+      var cx = x(i), cy = y(p.v);
+      var isPeak = PEAKS.hasOwnProperty(i);
+      g += '<circle cx="' + cx + '" cy="' + cy + '" r="' + (isPeak ? 6.5 : 3.2) + '" fill="#fff" stroke="' + (isPeak ? "#E01B10" : "#FF6A00") + '" stroke-width="' + (isPeak ? 3.2 : 2) + '"/>';
+      if(isPeak){
+        var ly = cy - 26;
+        var label = PEAKS[i] + " " + p.v + "x";
+        var tw = 18;
+        Array.from(label).forEach(function(ch){ tw += /[\u4e00-\u9fa5]/.test(ch) ? 11.4 : 6.6; });
+        var lx = Math.min(Math.max(cx - tw / 2, padL), W - padR - tw);
+        g += '<rect x="' + lx + '" y="' + (ly - 13) + '" width="' + tw + '" height="23" rx="6" fill="#1A0E08"/>';
+        g += '<text x="' + (lx + tw / 2) + '" y="' + (ly + 3) + '" text-anchor="middle" font-size="11.5" font-weight="800" fill="#FFD34D">' + label + '</text>';
+      }
+    });
+
+    /* X 轴标签 */
+    SERIES.forEach(function(p, i){
+      if(i % 2 !== 0 && i !== SERIES.length - 1) return;
+      g += '<text x="' + x(i) + '" y="' + (H - 26) + '" text-anchor="middle" font-size="11" font-weight="700" fill="rgba(90,58,44,.75)" font-family="ui-monospace,Menlo,monospace">' + p.d + '</text>';
+    });
+    g += '<text x="' + padL + '" y="' + (padT - 16) + '" font-size="11" font-weight="800" fill="#B23A00" letter-spacing="1.2">GMV 倍率（对平日）</text>';
+
+    svg.innerHTML = g;
+
+    /* 描线动画 */
+    var path = document.getElementById("gmvLine");
+    if(path && path.getTotalLength){
+      var len = path.getTotalLength();
+      path.style.strokeDasharray = len;
+      path.style.strokeDashoffset = len;
+      path.style.transition = "stroke-dashoffset 1.8s cubic-bezier(.2,.8,.3,1)";
+      requestAnimationFrame(function(){ path.style.strokeDashoffset = 0; });
+    }
+  }
+
+  function bindChartHover(){
+    var wrap = document.getElementById("chartWrap");
+    var svg = document.getElementById("gmvChart");
+    var tip = document.getElementById("chartTip");
+    if(!wrap || !svg || !tip) return;
+    var padL = 52, padR = 26, W = 980;
+    var iw = W - padL - padR;
+
+    svg.addEventListener("mousemove", function(e){
+      var rect = svg.getBoundingClientRect();
+      var rel = (e.clientX - rect.left) / rect.width * W;
+      var idx = Math.round((rel - padL) / iw * (SERIES.length - 1));
+      idx = Math.max(0, Math.min(SERIES.length - 1, idx));
+      var p = SERIES[idx];
+      tip.innerHTML = p.d + "<b>" + p.v.toFixed(1) + "x</b>";
+      tip.style.left = (e.clientX - rect.left) + "px";
+      tip.style.top = (e.clientY - rect.top - 8) + "px";
+      tip.classList.add("on");
+    });
+    svg.addEventListener("mouseleave", function(){ tip.classList.remove("on"); });
+  }
+
+  /* ================= 商品墙（2025 黑五爆款画像 · 全量） ================= */
+  var IMG = "https://img.kwcdn.com/";
+  var PRODUCTS = [
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/b95f205753a4c241a86aa5ef6a7e9247.jpg", heat:99, share:"80%", rank:"2025 黑五 · 眼部 #1", feat:"高显色多色盘，节日妆效一拍出片", stock:"库存告急" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/cc6cad473592e02a4d656909ebf751c2.jpg", heat:99, share:"80%", rank:"2025 黑五 · 眼部 #2", feat:"高显色多色盘，节日妆效一拍出片", stock:"库存告急" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/48c0a706-45ef-4fbc-bdb5-3c72ced4fd5a.jpg", heat:98, share:"80%", rank:"2025 黑五 · 眼部 #3", feat:"高显色多色盘，节日妆效一拍出片", stock:"库存告急" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/257f28ed-e948-4e9f-9b0d-b6b072da70e3.jpg", heat:98, share:"80%", rank:"2025 黑五 · 眼部 #4", feat:"高显色多色盘，节日妆效一拍出片", stock:"库存告急" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/algo_check/auto/2214dc4694425a8a1880c480dbc0d1e3_1736235084315.jpg", heat:98, share:"80%", rank:"2025 黑五 · 眼部 #5", feat:"高显色多色盘，节日妆效一拍出片", stock:"库存告急" },
+    { c:"yanbu", leaf:"眼线笔和眼影组合", img:"https://img.kwcdn.com/product/fancy/3bd63eec-daf4-42ac-aed0-799a91927d52.jpg", heat:98, share:"10%", rank:"2025 黑五 · 眼部 #6", feat:"一笔成型 + 眼影打底，新手也能画", stock:"库存告急" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/f2ad734a-3746-4958-ae5c-5c6c591ff5d0.jpg", heat:97, share:"80%", rank:"2025 黑五 · 眼部 #7", feat:"高显色多色盘，节日妆效一拍出片", stock:"库存告急" },
+    { c:"yanbu", leaf:"眼部高光", img:"https://img.kwcdn.com/product/fancy/85a8f356-25da-4c57-ac1d-0af60b1e61c2.jpg", heat:97, share:"10%", rank:"2025 黑五 · 眼部 #8", feat:"提亮眼头与眉骨，妆造立体度更高", stock:"库存告急" },
+    { c:"yanbu", leaf:"眼部高光", img:"https://img.kwcdn.com/product/fancy/d850a3d9-48f9-4f84-a29f-601c683a4b07.jpg", heat:97, share:"10%", rank:"2025 黑五 · 眼部 #9", feat:"提亮眼头与眉骨，妆造立体度更高", stock:"库存告急" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/76272e51-f63e-4644-9c72-ed3dba61bc8c.jpg", heat:96, share:"80%", rank:"2025 黑五 · 眼部 #10", feat:"高显色多色盘，节日妆效一拍出片", stock:"库存告急" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/c78285d0-3042-4f94-8ca7-81e339c61622.jpg", heat:96, share:"80%", rank:"2025 黑五 · 眼部 #11", feat:"高显色多色盘，节日妆效一拍出片", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼线笔和眼影组合", img:"https://img.kwcdn.com/product/fancy/992b38cb-2a9e-4c4a-80d7-1bd07e9327e5.jpg", heat:96, share:"10%", rank:"2025 黑五 · 眼部 #12", feat:"一笔成型 + 眼影打底，新手也能画", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼部高光", img:"https://img.kwcdn.com/product/open/2024-06-24/1719222471127-03893d7cb7a841b2a939b28f61d02205-goods.jpeg", heat:95, share:"10%", rank:"2025 黑五 · 眼部 #13", feat:"提亮眼头与眉骨，妆造立体度更高", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/affb35f0-d285-49d1-a7eb-3496b5c451c9.jpg", heat:95, share:"80%", rank:"2025 黑五 · 眼部 #14", feat:"高显色多色盘，节日妆效一拍出片", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/11ddb62b-1669-4d7e-af38-176d88cf7a7a.jpg", heat:95, share:"80%", rank:"2025 黑五 · 眼部 #15", feat:"高显色多色盘，节日妆效一拍出片", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/f638472b-cbc2-4fc5-a443-d19c4b4d3a1d.jpg", heat:95, share:"80%", rank:"2025 黑五 · 眼部 #16", feat:"高显色多色盘，节日妆效一拍出片", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/fc8304b024ff1614e82c8c39185b26ee.jpg", heat:94, share:"80%", rank:"2025 黑五 · 眼部 #17", feat:"高显色多色盘，节日妆效一拍出片", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/80305faf-63ad-467a-be58-eee303a23a5d.jpg", heat:94, share:"80%", rank:"2025 黑五 · 眼部 #18", feat:"高显色多色盘，节日妆效一拍出片", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/b874acf7-c713-4a13-b91b-f8052d821a2a.jpg", heat:94, share:"80%", rank:"2025 黑五 · 眼部 #19", feat:"高显色多色盘，节日妆效一拍出片", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/fd8b53f5-bffb-41d8-8445-2d50aa559629.jpg", heat:93, share:"80%", rank:"2025 黑五 · 眼部 #20", feat:"高显色多色盘，节日妆效一拍出片", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/7ea4912b-6fa3-4d2d-a6a8-8442620615a3.jpg", heat:93, share:"80%", rank:"2025 黑五 · 眼部 #21", feat:"高显色多色盘，节日妆效一拍出片", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼部高光", img:"https://img.kwcdn.com/product/fancy/cc322695-8aba-4663-b3ea-b2056e8c69cc.jpg", heat:93, share:"10%", rank:"2025 黑五 · 眼部 #22", feat:"提亮眼头与眉骨，妆造立体度更高", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/c214d95e-5989-43f4-bf20-17f6201660f9.jpg", heat:93, share:"80%", rank:"2025 黑五 · 眼部 #23", feat:"高显色多色盘，节日妆效一拍出片", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/951b13b9-828b-4605-87c2-c5695af4e18d.jpg", heat:92, share:"80%", rank:"2025 黑五 · 眼部 #24", feat:"高显色多色盘，节日妆效一拍出片", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/13c6db13-4872-45a4-8f4a-ac555a80f8d6.jpg", heat:92, share:"80%", rank:"2025 黑五 · 眼部 #25", feat:"高显色多色盘，节日妆效一拍出片", stock:"备货紧张" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/2c50ba99-8ab4-4aa4-97c7-5ff1a4e00a7f.jpg", heat:92, share:"80%", rank:"2025 黑五 · 眼部 #26", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/eec83715f859224ed24bfaaf480ca0cc.jpg", heat:91, share:"80%", rank:"2025 黑五 · 眼部 #27", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/d56e3d92-c948-42aa-9fbc-e4d845daa793.jpg", heat:91, share:"80%", rank:"2025 黑五 · 眼部 #28", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼线笔和眼影组合", img:"https://img.kwcdn.com/product/open/2024-10-06/1728230723213-ffb6e5c6fcf146bb8b85595712914851-goods.jpeg", heat:91, share:"10%", rank:"2025 黑五 · 眼部 #29", feat:"一笔成型 + 眼影打底，新手也能画", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/dc3b2c26-1813-420b-907a-b2789c99cc13.jpg", heat:91, share:"80%", rank:"2025 黑五 · 眼部 #30", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/5769560d-5254-465f-b888-5c8cc7f50a41.jpg", heat:90, share:"80%", rank:"2025 黑五 · 眼部 #31", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/open/2024-07-30/1722309504126-d4e37fb048844ad697e2b9e66ac97ab6-goods.jpeg", heat:90, share:"80%", rank:"2025 黑五 · 眼部 #32", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/fc8304b024ff1614e82c8c39185b26ee.jpg", heat:90, share:"80%", rank:"2025 黑五 · 眼部 #33", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼线笔和眼影组合", img:"https://img.kwcdn.com/product/fancy/147a1c90-9dda-47e6-b453-3500bcea9f3a.jpg", heat:89, share:"10%", rank:"2025 黑五 · 眼部 #34", feat:"一笔成型 + 眼影打底，新手也能画", stock:"正常" },
+    { c:"yanbu", leaf:"眼部高光", img:"https://img.kwcdn.com/product/fancy/73ad1485-e04a-4d18-b048-5f371f1ffb64.jpg", heat:89, share:"10%", rank:"2025 黑五 · 眼部 #35", feat:"提亮眼头与眉骨，妆造立体度更高", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/25a3c5d9-d17e-4153-9d43-5c69d7027991.jpg", heat:89, share:"80%", rank:"2025 黑五 · 眼部 #36", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/fdafdbf9-a12f-4797-ac81-767896606558.jpg", heat:88, share:"80%", rank:"2025 黑五 · 眼部 #37", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/ce9ce425-2771-43ce-98aa-662e47e74c49.jpg", heat:88, share:"80%", rank:"2025 黑五 · 眼部 #38", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼部高光", img:"https://img.kwcdn.com/product/fancy/07e9c6e1-d8d8-464c-b3a2-e6d5ad8c695a.jpg", heat:88, share:"10%", rank:"2025 黑五 · 眼部 #39", feat:"提亮眼头与眉骨，妆造立体度更高", stock:"正常" },
+    { c:"yanbu", leaf:"眼线笔和眼影组合", img:"https://img.kwcdn.com/product/fancy/9be4ee5f-7b8a-47b5-a501-9f73cd01f621.jpg", heat:88, share:"10%", rank:"2025 黑五 · 眼部 #40", feat:"一笔成型 + 眼影打底，新手也能画", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/23cd627f-6fbe-4b64-8994-0f314f322c2a.jpg", heat:87, share:"80%", rank:"2025 黑五 · 眼部 #41", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/bf439f465046dd023b79b9f79ed0b787.jpg", heat:87, share:"80%", rank:"2025 黑五 · 眼部 #42", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/691adc03-2d4d-46cd-8137-b71c892ebdf7.jpg", heat:87, share:"80%", rank:"2025 黑五 · 眼部 #43", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/2a9ff7dd-8c41-4cb0-a622-d5910606ddb8.jpg", heat:86, share:"80%", rank:"2025 黑五 · 眼部 #44", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼部高光", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/fc1ef028082459768b329124b247d4e4.jpg", heat:86, share:"10%", rank:"2025 黑五 · 眼部 #45", feat:"提亮眼头与眉骨，妆造立体度更高", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/3d8e76b1-7716-4487-9375-5e0784c0624e.jpg", heat:86, share:"80%", rank:"2025 黑五 · 眼部 #46", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/58ecba2b-f237-4b43-8762-de617bd245c8.jpg", heat:86, share:"80%", rank:"2025 黑五 · 眼部 #47", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/376d447e-e4a6-4fcc-81c1-75cb91eadb3a.jpg", heat:85, share:"80%", rank:"2025 黑五 · 眼部 #48", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/de360113-8499-4c2c-93d5-de36a21ccd6e.jpg", heat:85, share:"80%", rank:"2025 黑五 · 眼部 #49", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/d6be5042-d52f-4232-ad3d-340047b698eb.jpg", heat:85, share:"80%", rank:"2025 黑五 · 眼部 #50", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/244f1d51-ddcd-483d-afe7-a1d7089d3932.jpg", heat:84, share:"80%", rank:"2025 黑五 · 眼部 #51", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/1936038f-63ad-4c18-b1f8-3bc57437877d.jpg", heat:84, share:"80%", rank:"2025 黑五 · 眼部 #52", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/3844e93b-f7e2-4537-88c8-67a14efc7249.jpg", heat:84, share:"80%", rank:"2025 黑五 · 眼部 #53", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/8c2c12e0-4fd5-43ee-933e-5d19dd22423f.jpg", heat:83, share:"80%", rank:"2025 黑五 · 眼部 #54", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼线笔和眼影组合", img:"https://img.kwcdn.com/product/fancy/cc1bbec6-5dce-43ba-9efd-f2dc8b992283.jpg", heat:83, share:"10%", rank:"2025 黑五 · 眼部 #55", feat:"一笔成型 + 眼影打底，新手也能画", stock:"正常" },
+    { c:"yanbu", leaf:"眼部高光", img:"https://img.kwcdn.com/product/fancy/1ed5a618-2748-4374-b615-40e33a2e5ae1.jpg", heat:83, share:"10%", rank:"2025 黑五 · 眼部 #56", feat:"提亮眼头与眉骨，妆造立体度更高", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/9f4576cb-7cb7-4c06-ba0f-c08b5b7f0106.jpg", heat:83, share:"80%", rank:"2025 黑五 · 眼部 #57", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/d9aaa770-72b8-41c8-b9e2-a8f191bfae6c.jpg", heat:82, share:"80%", rank:"2025 黑五 · 眼部 #58", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/3f59c0b3-e201-4680-a308-6afe1ca719c1.jpg", heat:82, share:"80%", rank:"2025 黑五 · 眼部 #59", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/ff7602fa-8c55-4627-9bbd-cf4f433c0e38.jpg", heat:82, share:"80%", rank:"2025 黑五 · 眼部 #60", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/9d3b70cc-0804-43bb-94a9-d7bc365a4f21.jpg", heat:81, share:"80%", rank:"2025 黑五 · 眼部 #61", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/769104b4-8378-483f-ac80-0d0fed968efc.jpg", heat:81, share:"80%", rank:"2025 黑五 · 眼部 #62", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/ae5da636-2c64-400e-8a67-b7341988032e.jpg", heat:81, share:"80%", rank:"2025 黑五 · 眼部 #63", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/41cdf735-ba53-48c5-aec7-a752e57e7525.jpg", heat:81, share:"80%", rank:"2025 黑五 · 眼部 #64", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/d245cca9-f038-427f-8d88-7066dc7ddbba.jpg", heat:80, share:"80%", rank:"2025 黑五 · 眼部 #65", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/6490187de45d6d8101010e562ba1f416.jpg", heat:80, share:"80%", rank:"2025 黑五 · 眼部 #66", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/b2a650f4-4938-4143-88a4-dc6e1d3da9e4.jpg", heat:80, share:"80%", rank:"2025 黑五 · 眼部 #67", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/ccd22018-2e9b-49c9-8ff1-cc0d9f6fee01.jpg", heat:79, share:"80%", rank:"2025 黑五 · 眼部 #68", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/32f96749-7ea8-4975-a27d-46348add44df.jpg", heat:79, share:"80%", rank:"2025 黑五 · 眼部 #69", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/25446891-d31e-41f8-b823-eca711049362.jpg", heat:79, share:"80%", rank:"2025 黑五 · 眼部 #70", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼线笔和眼影组合", img:"https://img.kwcdn.com/product/fancy/a79ee306-9238-441e-b869-099b840dcfa8.jpg", heat:78, share:"10%", rank:"2025 黑五 · 眼部 #71", feat:"一笔成型 + 眼影打底，新手也能画", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/b4e93851-7821-44e4-842b-771a4e844312.jpg", heat:78, share:"80%", rank:"2025 黑五 · 眼部 #72", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/6a4997cf-8383-4971-8dd0-2a4ed24051a8.jpg", heat:78, share:"80%", rank:"2025 黑五 · 眼部 #73", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/e7919dd6-475e-4e71-902f-f830a13a7617.jpg", heat:78, share:"80%", rank:"2025 黑五 · 眼部 #74", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/17718c8d-1358-4cf9-91d2-9ef7c55906fd.jpg", heat:77, share:"80%", rank:"2025 黑五 · 眼部 #75", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼线笔和眼影组合", img:"https://img.kwcdn.com/product/fancy/05161fbd-beda-494e-8b63-02baac53fe89.jpg", heat:77, share:"10%", rank:"2025 黑五 · 眼部 #76", feat:"一笔成型 + 眼影打底，新手也能画", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/de099aab-3b38-40a5-abc0-198ade2249e4.jpg", heat:77, share:"80%", rank:"2025 黑五 · 眼部 #77", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/157f8564-2b39-4c11-ba89-786f0f831d7e.jpg", heat:76, share:"80%", rank:"2025 黑五 · 眼部 #78", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/19ffd623ceed08fbf6c9dfc24d7c5469.jpg", heat:76, share:"80%", rank:"2025 黑五 · 眼部 #79", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/ab8857f5-638b-4d12-85e4-5667b75fec8f.jpg", heat:76, share:"80%", rank:"2025 黑五 · 眼部 #80", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/899f32dc-a88c-40d9-afa1-533e956a63c4.jpg", heat:76, share:"80%", rank:"2025 黑五 · 眼部 #81", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼线笔和眼影组合", img:"https://img.kwcdn.com/product/fancy/5c6ed1bf-8861-42db-9aa6-aac82a5b3652.jpg", heat:75, share:"10%", rank:"2025 黑五 · 眼部 #82", feat:"一笔成型 + 眼影打底，新手也能画", stock:"正常" },
+    { c:"yanbu", leaf:"眼部高光", img:"https://img.kwcdn.com/product/fancy/d2fa0ecb-eff0-41f5-b868-9dd9d89a662d.jpg", heat:75, share:"10%", rank:"2025 黑五 · 眼部 #83", feat:"提亮眼头与眉骨，妆造立体度更高", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/f070e483-b1b3-4a6b-93f0-4c534287f107.jpg", heat:75, share:"80%", rank:"2025 黑五 · 眼部 #84", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/84c5c2e5-1c0e-40cc-95b5-b6c10c2dcd65.jpg", heat:74, share:"80%", rank:"2025 黑五 · 眼部 #85", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/25795d06-5b0e-4a91-829a-71ac219a53b2.jpg", heat:74, share:"80%", rank:"2025 黑五 · 眼部 #86", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼部高光", img:"https://img.kwcdn.com/product/fancy/ed033f35-eabb-4a59-8278-2935c8049f9e.jpg", heat:74, share:"10%", rank:"2025 黑五 · 眼部 #87", feat:"提亮眼头与眉骨，妆造立体度更高", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/25199db5-03c3-4d8f-923f-3441e294b4bd.jpg", heat:74, share:"80%", rank:"2025 黑五 · 眼部 #88", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/9b292f29-9694-4ecb-a4c1-a19ef2726ad8.jpg", heat:73, share:"80%", rank:"2025 黑五 · 眼部 #89", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/1d14c6c09cc/e594a8cc-2a97-47e6-a327-c778c6d905c9_1080x1080.jpeg", heat:73, share:"80%", rank:"2025 黑五 · 眼部 #90", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/algo_check/auto/8078a223f88777f4d6198bac4fc6a72c_1746972928500.jpg", heat:73, share:"80%", rank:"2025 黑五 · 眼部 #91", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/open/badc1adb6f8948ea83a15d3a5f9e914c-goods.jpeg", heat:72, share:"80%", rank:"2025 黑五 · 眼部 #92", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/34f6bfb1192a171175bd5cdd01ad3bce.jpg", heat:72, share:"80%", rank:"2025 黑五 · 眼部 #93", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/6bfbeeb4-540b-41c2-a809-41b073e43f59.jpg", heat:72, share:"80%", rank:"2025 黑五 · 眼部 #94", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/7cd3b1b2-50d0-419e-8901-a209bdf56a9b.jpg", heat:71, share:"80%", rank:"2025 黑五 · 眼部 #95", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/16306d64-2bb1-4ba0-8564-f0a845696374.jpg", heat:71, share:"80%", rank:"2025 黑五 · 眼部 #96", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/1e261d8e-18d4-438a-a204-bdb5a07e0291.jpg", heat:71, share:"80%", rank:"2025 黑五 · 眼部 #97", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/b547de65-d382-4f4c-b96d-4b472c4e4a9e.jpg", heat:71, share:"80%", rank:"2025 黑五 · 眼部 #98", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/d43ac138-d7b6-45eb-9c53-c0ae911bd641.jpg", heat:70, share:"80%", rank:"2025 黑五 · 眼部 #99", feat:"高显色多色盘，节日妆效一拍出片", stock:"正常" },
+    { c:"yanbu", leaf:"眼线笔和眼影组合", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/d5eecc19fe5dbb0b6543d52d46214e88.jpg", heat:70, share:"10%", rank:"2025 黑五 · 眼部 #100", feat:"一笔成型 + 眼影打底，新手也能画", stock:"正常" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/5ee33b6a-a559-46f4-8c45-6aef5cfdf445.jpg", heat:99, share:"94%", rank:"2025 黑五 · 礼盒 #1", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/25c93b31-9f08-4027-8ebf-6963414df626.jpg", heat:99, share:"6%", rank:"2025 黑五 · 礼盒 #2", feat:"多色一盘全脸可用，客单与毛利双高", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/566fd419-46bb-4adc-a214-e98220eae16a.jpg", heat:98, share:"94%", rank:"2025 黑五 · 礼盒 #3", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/64044998-3369-4ed3-95f2-30374280abab.jpg", heat:98, share:"94%", rank:"2025 黑五 · 礼盒 #4", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/553dee99-9ed5-4b57-bf6d-b496faba4b65.jpg", heat:98, share:"94%", rank:"2025 黑五 · 礼盒 #5", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/233940c0-aa6d-4f68-adee-1addda81eb0e.jpg", heat:98, share:"94%", rank:"2025 黑五 · 礼盒 #6", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/open/2024-08-19/1724062942108-896ceb8f03ee4dcdbb5a2064a534339e-goods.jpeg", heat:97, share:"94%", rank:"2025 黑五 · 礼盒 #7", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/08195e8d-9ed1-4c80-aa49-2b4b6ebfaa08.jpg", heat:97, share:"94%", rank:"2025 黑五 · 礼盒 #8", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/c8b04922-6c20-460f-84f3-f664b7521200.jpg", heat:97, share:"94%", rank:"2025 黑五 · 礼盒 #9", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/e2a84a1c-5b7e-495a-b662-c3e661eb9803.jpg", heat:96, share:"94%", rank:"2025 黑五 · 礼盒 #10", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/4db5dc62-95ce-4798-99df-f1743066628f.jpg", heat:96, share:"94%", rank:"2025 黑五 · 礼盒 #11", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/c93f3f67-ba36-4b8c-9f3d-b24fbde5f90e.jpg", heat:96, share:"94%", rank:"2025 黑五 · 礼盒 #12", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/510b826e-8696-4430-83ee-8e301a28ad1c.jpg", heat:95, share:"94%", rank:"2025 黑五 · 礼盒 #13", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/375e2f3b-b871-48a8-b9fe-6816b89fe567.jpg", heat:95, share:"94%", rank:"2025 黑五 · 礼盒 #14", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/5fdccf26-77cf-4d8f-80d3-65a9ead2aad6.jpg", heat:95, share:"94%", rank:"2025 黑五 · 礼盒 #15", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/45da33fd-9961-410b-8914-e4d4889de46e.jpg", heat:95, share:"94%", rank:"2025 黑五 · 礼盒 #16", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/7a3effab-d566-4948-b0fb-9a594c33cfc3.jpg", heat:94, share:"94%", rank:"2025 黑五 · 礼盒 #17", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/3f987ca0-d482-4834-a6f6-94614777edb7.jpg", heat:94, share:"94%", rank:"2025 黑五 · 礼盒 #18", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/b9d7a608-7351-4986-aac0-dda4d281235d.jpg", heat:94, share:"94%", rank:"2025 黑五 · 礼盒 #19", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/cb9068bc-91df-487c-97db-09237150334e.jpg", heat:93, share:"94%", rank:"2025 黑五 · 礼盒 #20", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/29083b62-07a2-4741-bc10-1cef79337b8e.jpg", heat:93, share:"94%", rank:"2025 黑五 · 礼盒 #21", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/c9e59e51-d5a3-4a2a-823c-8f2d48d248b1.jpg", heat:93, share:"6%", rank:"2025 黑五 · 礼盒 #22", feat:"多色一盘全脸可用，客单与毛利双高", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/700b1135-365f-4143-9a5c-ea1bc7af4a97.jpg", heat:93, share:"94%", rank:"2025 黑五 · 礼盒 #23", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/7daea71e-a256-49ec-89ac-7fc756d1a3b0.jpg", heat:92, share:"94%", rank:"2025 黑五 · 礼盒 #24", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/d7acc192-bd4c-4790-b622-8d0aecd40a8c.jpg", heat:92, share:"94%", rank:"2025 黑五 · 礼盒 #25", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/a6571492-f101-4fe6-92f0-decd9bd238e2.jpg", heat:92, share:"6%", rank:"2025 黑五 · 礼盒 #26", feat:"多色一盘全脸可用，客单与毛利双高", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/f6379266-3db3-472a-a0d5-85f95be883ef.jpg", heat:91, share:"94%", rank:"2025 黑五 · 礼盒 #27", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/open/6998a24f0ca94aa095b6b4a215baff66-goods.jpeg", heat:91, share:"94%", rank:"2025 黑五 · 礼盒 #28", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/7a2733ac-ae93-4f2b-aed1-6bd7f7803b46.jpg", heat:91, share:"94%", rank:"2025 黑五 · 礼盒 #29", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/7129c638-d252-456e-b0be-5b783479c91d.jpg", heat:91, share:"94%", rank:"2025 黑五 · 礼盒 #30", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/59a56e2f-23f6-454f-baf1-460a6f845a5a.jpg", heat:90, share:"94%", rank:"2025 黑五 · 礼盒 #31", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/7a2733ac-ae93-4f2b-aed1-6bd7f7803b46.jpg", heat:90, share:"94%", rank:"2025 黑五 · 礼盒 #32", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/7a2733ac-ae93-4f2b-aed1-6bd7f7803b46.jpg", heat:90, share:"94%", rank:"2025 黑五 · 礼盒 #33", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/01a0664c-2249-4200-bead-ca0a90367884.jpg", heat:89, share:"94%", rank:"2025 黑五 · 礼盒 #34", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/e3c2af59-d67b-434e-b806-ee1f7b69f53c.jpg", heat:89, share:"94%", rank:"2025 黑五 · 礼盒 #35", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/431a28df-3d14-4854-a66b-82bfdfca64a7.jpg", heat:89, share:"94%", rank:"2025 黑五 · 礼盒 #36", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/db74d620-16d8-47e0-8e4c-f0cde02eaef5.jpg", heat:88, share:"94%", rank:"2025 黑五 · 礼盒 #37", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/21bfdb59-54c4-425a-8792-f16f3554d2e5.jpg", heat:88, share:"94%", rank:"2025 黑五 · 礼盒 #38", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/dba31305-06f5-44be-a9c5-3cd52099e7eb.jpg", heat:88, share:"94%", rank:"2025 黑五 · 礼盒 #39", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/ef29045d-f069-48d2-8823-06d23ec5c2a6.jpg", heat:88, share:"94%", rank:"2025 黑五 · 礼盒 #40", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/26d2c79b-a98f-4c17-b801-cff57335226c.jpg", heat:87, share:"94%", rank:"2025 黑五 · 礼盒 #41", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/algo_check/auto/d970147c34c63da9cde7682478abc1bc1747547101476.jpg", heat:87, share:"94%", rank:"2025 黑五 · 礼盒 #42", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/375458a8-36a6-4425-8b99-0165471e1911.jpg", heat:87, share:"94%", rank:"2025 黑五 · 礼盒 #43", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4ff544d06242e69c88454e95f25cc012.jpg", heat:86, share:"94%", rank:"2025 黑五 · 礼盒 #44", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/37a6ede4-0505-4bec-9a60-5983cd535fc5.jpg", heat:86, share:"94%", rank:"2025 黑五 · 礼盒 #45", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/4622150c-dcb2-4b77-969f-d2ad7f61ee96.jpg", heat:86, share:"94%", rank:"2025 黑五 · 礼盒 #46", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/19ab0b00-76bf-4468-a1b3-257aa06b111c.jpg", heat:86, share:"94%", rank:"2025 黑五 · 礼盒 #47", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/a52df914-689b-40ec-9b49-9aac4421562f.jpg", heat:85, share:"94%", rank:"2025 黑五 · 礼盒 #48", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/32845917-7d85-4094-8ffb-a26c125ce87e.jpg", heat:85, share:"94%", rank:"2025 黑五 · 礼盒 #49", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/cde69ce2-fa03-4343-ae50-11133c6aa5a0.jpg", heat:85, share:"94%", rank:"2025 黑五 · 礼盒 #50", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/58d19314-9f88-46ec-942a-285e81cb2c20.jpg", heat:84, share:"94%", rank:"2025 黑五 · 礼盒 #51", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/4f4a8f92-7b60-46a2-b2df-d9a80a2b6a30.jpg", heat:84, share:"94%", rank:"2025 黑五 · 礼盒 #52", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/3e8e9738-35f1-4e8b-baa4-57f2c6731776.jpg", heat:84, share:"94%", rank:"2025 黑五 · 礼盒 #53", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/473c8134-0392-4869-aecb-7ddd056e4140.jpg", heat:83, share:"94%", rank:"2025 黑五 · 礼盒 #54", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/998c2b8d-bda5-42ba-b08e-00d862700bcc.jpg", heat:83, share:"94%", rank:"2025 黑五 · 礼盒 #55", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/1f025bc6-67ad-450a-a689-8dbcf4bbfc1d.jpg", heat:83, share:"94%", rank:"2025 黑五 · 礼盒 #56", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/a072178b-96e7-44dd-be15-7ecd81f9c7f7.jpg", heat:83, share:"94%", rank:"2025 黑五 · 礼盒 #57", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/3ed91c70-d072-46a2-846b-f5493e09d2f7.jpg", heat:82, share:"94%", rank:"2025 黑五 · 礼盒 #58", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/f12e0bc6-0c1a-4250-acc4-288b5dc258e0.jpg", heat:82, share:"94%", rank:"2025 黑五 · 礼盒 #59", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/open/2024-07-31/1722410461273-276e56fb213e45328f1a715ef715ff10-goods.jpeg", heat:82, share:"94%", rank:"2025 黑五 · 礼盒 #60", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/1cd7feb0-0003-4614-8f40-ef680b92ffb7.jpg", heat:81, share:"94%", rank:"2025 黑五 · 礼盒 #61", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/ac41c9f7-954a-47c8-83f1-6d2fd0a6dc8e.jpg", heat:81, share:"94%", rank:"2025 黑五 · 礼盒 #62", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/007abb70-14de-4875-8846-3eb1af8d57d7.jpg", heat:81, share:"6%", rank:"2025 黑五 · 礼盒 #63", feat:"多色一盘全脸可用，客单与毛利双高", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/1f2b3abd-2da7-4512-954a-f9011554e3cd.jpg", heat:81, share:"94%", rank:"2025 黑五 · 礼盒 #64", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/open/cf2a2c5249304682bb8980ba94273e03-goods.jpeg", heat:80, share:"94%", rank:"2025 黑五 · 礼盒 #65", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/c1c85e52-540b-4555-ab5b-ec182e921f2a.jpg", heat:80, share:"94%", rank:"2025 黑五 · 礼盒 #66", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/4dafac69-1057-4ae6-965b-b17c72a7480b.jpg", heat:80, share:"94%", rank:"2025 黑五 · 礼盒 #67", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/2f70efad-27cc-45f3-bb3d-e6b8de6b998f.jpg", heat:79, share:"94%", rank:"2025 黑五 · 礼盒 #68", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/7218355e-4aca-4e69-8224-88ddc4691336.jpg", heat:79, share:"94%", rank:"2025 黑五 · 礼盒 #69", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/open/af2a1630ed7747c6b04e34f2bcb612ac-goods.jpeg", heat:79, share:"94%", rank:"2025 黑五 · 礼盒 #70", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/d9d00d38-6e11-4017-8b4c-e1b71254f047.jpg", heat:78, share:"6%", rank:"2025 黑五 · 礼盒 #71", feat:"多色一盘全脸可用，客单与毛利双高", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/09b10559-03b6-4384-b5b3-a03bf60b35c6.jpg", heat:78, share:"94%", rank:"2025 黑五 · 礼盒 #72", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/18f89a0d-92d6-4b48-aadf-eda898e6930b.jpg", heat:78, share:"94%", rank:"2025 黑五 · 礼盒 #73", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/4c86978b-936f-435b-8a65-23469efa4101.jpg", heat:78, share:"94%", rank:"2025 黑五 · 礼盒 #74", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/cf44fd77-46fd-46ee-835d-456d94e1ab2b.jpg", heat:77, share:"94%", rank:"2025 黑五 · 礼盒 #75", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/8f841b2d-c811-4cad-9429-c2f980047f93.jpg", heat:77, share:"94%", rank:"2025 黑五 · 礼盒 #76", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/open/2024-08-19/1724062942108-896ceb8f03ee4dcdbb5a2064a534339e-goods.jpeg", heat:77, share:"94%", rank:"2025 黑五 · 礼盒 #77", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/700b1135-365f-4143-9a5c-ea1bc7af4a97.jpg", heat:76, share:"94%", rank:"2025 黑五 · 礼盒 #78", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/bcd0a401-8802-4645-b61d-b0e788c348fd.jpg", heat:76, share:"94%", rank:"2025 黑五 · 礼盒 #79", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/429b15c2-a18c-4d54-8541-008fb225a8be.jpg", heat:76, share:"94%", rank:"2025 黑五 · 礼盒 #80", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/f055e2d2-8223-432b-a5bc-a4073ea81111.jpg", heat:76, share:"94%", rank:"2025 黑五 · 礼盒 #81", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/462db18d-7627-4a4e-8c1f-91d9247e062d.jpg", heat:75, share:"94%", rank:"2025 黑五 · 礼盒 #82", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/e5a89850-c656-4b1d-9629-1f9f70e1bb2f.jpg", heat:75, share:"94%", rank:"2025 黑五 · 礼盒 #83", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/68b9ff82-11d2-4a8d-8814-fecf2d0f98c7.jpg", heat:75, share:"94%", rank:"2025 黑五 · 礼盒 #84", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/ef51052a-799e-47a1-ac89-e232dfffedac.jpg", heat:74, share:"94%", rank:"2025 黑五 · 礼盒 #85", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/b591c86c-2d69-4407-9246-7dcf7c14526d.jpg", heat:74, share:"94%", rank:"2025 黑五 · 礼盒 #86", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/ba690acd-5692-4367-99d7-df1741ec1c2b.jpg", heat:74, share:"94%", rank:"2025 黑五 · 礼盒 #87", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/15b773b8-b61d-4539-a09e-2bbcae37f7bd.jpg", heat:74, share:"94%", rank:"2025 黑五 · 礼盒 #88", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/6fd3881c-d745-4156-a05f-d52fdbb01520.jpg", heat:73, share:"94%", rank:"2025 黑五 · 礼盒 #89", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/b2561c62-8096-4026-b913-9d709dd7a4b5.jpg", heat:73, share:"94%", rank:"2025 黑五 · 礼盒 #90", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/2b74175a-4dce-4ec5-9279-cab9e0211c9d.jpg", heat:73, share:"94%", rank:"2025 黑五 · 礼盒 #91", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/67756df8-52ad-4238-9b12-da3f4701ab93.jpg", heat:72, share:"94%", rank:"2025 黑五 · 礼盒 #92", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/891611f6-4d4e-4c18-8d02-e5db64df01d6.jpg", heat:72, share:"94%", rank:"2025 黑五 · 礼盒 #93", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/6c63a1f4-1933-4657-aea5-237bc767edb3.jpg", heat:72, share:"94%", rank:"2025 黑五 · 礼盒 #94", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/0304e15d-fdd1-47e4-ac2c-15de8ae20401.jpg", heat:71, share:"94%", rank:"2025 黑五 · 礼盒 #95", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/700b1135-365f-4143-9a5c-ea1bc7af4a97.jpg", heat:71, share:"94%", rank:"2025 黑五 · 礼盒 #96", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/ace0c984-bd87-4513-baf3-e91a82a610d6.jpg", heat:71, share:"94%", rank:"2025 黑五 · 礼盒 #97", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/74b24e1d-4cf8-4e03-a0b2-0c0e266eb1c4.jpg", heat:71, share:"6%", rank:"2025 黑五 · 礼盒 #98", feat:"多色一盘全脸可用，客单与毛利双高", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/2da3d652-a8c3-474e-8a42-3cc11d7ed099.jpg", heat:70, share:"94%", rank:"2025 黑五 · 礼盒 #99", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"yanbu", leaf:"眼影", img:"https://img.kwcdn.com/product/fancy/1979dd8d-00b2-4284-a671-4c0c9214fa24.jpg", heat:70, share:"94%", rank:"2025 黑五 · 礼盒 #100", feat:"礼盒 / 多色盘组合，送礼与节日场景最好卖", stock:"爆款返场" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/fancy/c6c22036-60ce-49aa-8dae-ee482c0305ee.jpg", heat:99, share:"14%", rank:"2025 黑五 · 身体 #1", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"库存告急" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/1dec4a1140/e42e0b23-2585-41e6-8e19-b9607c7f5ab3_1000x1000.png", heat:99, share:"21%", rank:"2025 黑五 · 身体 #2", feat:"节日彩绘套装，多色一盘好拍", stock:"库存告急" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/fancy/b719df9e-64fe-402b-94a4-82195e24b1f7.jpg", heat:98, share:"13%", rank:"2025 黑五 · 身体 #3", feat:"脸部贴饰点睛，妆造完成度提升", stock:"库存告急" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/fancy/7b5c6b2a-0d91-4f51-8517-f0fffa75247c.jpg", heat:98, share:"14%", rank:"2025 黑五 · 身体 #4", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"库存告急" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/fancy/9f23fac9-2c11-4129-88af-2c957b4fc844.jpg", heat:98, share:"14%", rank:"2025 黑五 · 身体 #5", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"库存告急" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/cde58732-347f-4d6c-94d7-19058bd3a75b.jpg", heat:98, share:"29%", rank:"2025 黑五 · 身体 #6", feat:"低客单高氛围，凑单加购首选", stock:"库存告急" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/open/9da354a2be5245b3abd5a588d8c2d6d0-goods.jpeg", heat:97, share:"13%", rank:"2025 黑五 · 身体 #7", feat:"脸部贴饰点睛，妆造完成度提升", stock:"库存告急" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/open/1950375652484b2aa4e2c2da8f37597e-goods.jpeg", heat:97, share:"13%", rank:"2025 黑五 · 身体 #8", feat:"脸部贴饰点睛，妆造完成度提升", stock:"库存告急" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/open/cdd844b43cbb4d31bafd3ad7d7e850e5-goods.jpeg", heat:97, share:"14%", rank:"2025 黑五 · 身体 #9", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"库存告急" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/fancy/d34d9244-c793-40c4-b8da-8e262d5e297e.jpg", heat:96, share:"14%", rank:"2025 黑五 · 身体 #10", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"库存告急" },
+    { c:"shenti", leaf:"闪粉", img:"https://img.kwcdn.com/product/fancy/9ee38e0a-54b4-4b4e-95a8-3d88145a90c0.jpg", heat:96, share:"11%", rank:"2025 黑五 · 身体 #11", feat:"身体与面部细闪，夜场派对氛围感拉满", stock:"备货紧张" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/fancy/5974b86f-ac49-49b2-b67d-8c8787301393.jpg", heat:96, share:"14%", rank:"2025 黑五 · 身体 #12", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"备货紧张" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/fancy/91b6f1ff-fcaa-45b4-8da8-8c39b914c6f4.jpg", heat:95, share:"14%", rank:"2025 黑五 · 身体 #13", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"备货紧张" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/fancy/aa5d18d8-963d-4fbd-8ca5-da35a4ab4672.jpg", heat:95, share:"14%", rank:"2025 黑五 · 身体 #14", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"备货紧张" },
+    { c:"shenti", leaf:"闪粉", img:"https://img.kwcdn.com/product/fancy/250f4d68-c4b5-47fd-b1ef-8fdbd01cf0eb.jpg", heat:95, share:"11%", rank:"2025 黑五 · 身体 #15", feat:"身体与面部细闪，夜场派对氛围感拉满", stock:"备货紧张" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/be819473-26db-407c-ba06-51b3012afdfe.jpg", heat:95, share:"29%", rank:"2025 黑五 · 身体 #16", feat:"低客单高氛围，凑单加购首选", stock:"备货紧张" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/e6f251d0-667a-40b6-b338-4b03f7135a37.jpg", heat:94, share:"29%", rank:"2025 黑五 · 身体 #17", feat:"低客单高氛围，凑单加购首选", stock:"备货紧张" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/fc0cb219-d6b9-459c-9a36-819c9a4ab4a1.jpg", heat:94, share:"29%", rank:"2025 黑五 · 身体 #18", feat:"低客单高氛围，凑单加购首选", stock:"备货紧张" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/f0ed72a4-0b9c-466e-8eef-91633a356456.jpg", heat:94, share:"29%", rank:"2025 黑五 · 身体 #19", feat:"低客单高氛围，凑单加购首选", stock:"备货紧张" },
+    { c:"shenti", leaf:"古铜粉", img:"https://img.kwcdn.com/product/open/5129c581543e41ac9d7730a44d7052b9-goods.jpeg", heat:93, share:"12%", rank:"2025 黑五 · 身体 #20", feat:"立体修容，拉美肤色最吃这一款", stock:"备货紧张" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/fancy/d013d908-fe34-4421-b210-0799d6ee29ed.jpg", heat:93, share:"13%", rank:"2025 黑五 · 身体 #21", feat:"脸部贴饰点睛，妆造完成度提升", stock:"备货紧张" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/e9ff5097-5271-4778-b126-cfc75f814aa6.jpg", heat:93, share:"29%", rank:"2025 黑五 · 身体 #22", feat:"低客单高氛围，凑单加购首选", stock:"备货紧张" },
+    { c:"shenti", leaf:"古铜粉", img:"https://img.kwcdn.com/product/fancy/777abfc2-d154-4018-8c37-995a3f623cbd.jpg", heat:93, share:"12%", rank:"2025 黑五 · 身体 #23", feat:"立体修容，拉美肤色最吃这一款", stock:"备货紧张" },
+    { c:"shenti", leaf:"古铜粉", img:"https://img.kwcdn.com/product/fancy/7082ea15-8dda-4d01-9d73-54068c9962e6.jpg", heat:92, share:"12%", rank:"2025 黑五 · 身体 #24", feat:"立体修容，拉美肤色最吃这一款", stock:"备货紧张" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/fancy/f3c1fc8c-35f0-40cf-893c-52bbfac263c5.jpg", heat:92, share:"14%", rank:"2025 黑五 · 身体 #25", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"备货紧张" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/open/fda9198c0dfa44b7b94186ed53a7380f-goods.jpeg", heat:92, share:"14%", rank:"2025 黑五 · 身体 #26", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/934114df-0826-4742-8996-ff175599798d.jpg", heat:91, share:"21%", rank:"2025 黑五 · 身体 #27", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/ce3564c7-3890-48b5-b006-e63a11d6bad6.jpg", heat:91, share:"29%", rank:"2025 黑五 · 身体 #28", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"闪粉", img:"https://img.kwcdn.com/product/fancy/d6cb374c-cdae-4b7d-9d13-4f3e163f7a9d.jpg", heat:91, share:"11%", rank:"2025 黑五 · 身体 #29", feat:"身体与面部细闪，夜场派对氛围感拉满", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/algo_check/auto/d4220cb1a69be25dc90455b2e05d7fee_1763030333779.jpg", heat:91, share:"29%", rank:"2025 黑五 · 身体 #30", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/3d5d2b83-daa4-401c-8607-28ccc0b5e05b.jpg", heat:90, share:"21%", rank:"2025 黑五 · 身体 #31", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/85678250-e403-4c57-bb34-99f8d8b7c80d.jpg", heat:90, share:"29%", rank:"2025 黑五 · 身体 #32", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"古铜粉", img:"https://img.kwcdn.com/product/fancy/7cb272a6-41c3-4d14-bb47-d20430d68ad6.jpg", heat:90, share:"12%", rank:"2025 黑五 · 身体 #33", feat:"立体修容，拉美肤色最吃这一款", stock:"正常" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/fancy/00c06d33-c283-4c48-a35f-6e074501a592.jpg", heat:89, share:"13%", rank:"2025 黑五 · 身体 #34", feat:"脸部贴饰点睛，妆造完成度提升", stock:"正常" },
+    { c:"shenti", leaf:"闪粉", img:"https://img.kwcdn.com/product/fancy/a7fad2b7-acd1-4b89-b06b-a78f6ba3586e.jpg", heat:89, share:"11%", rank:"2025 黑五 · 身体 #35", feat:"身体与面部细闪，夜场派对氛围感拉满", stock:"正常" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/fancy/87d7ec15-2a0c-43f4-8ca7-832ba8bc7ead.jpg", heat:89, share:"13%", rank:"2025 黑五 · 身体 #36", feat:"脸部贴饰点睛，妆造完成度提升", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/a050227f-1f99-4ec0-95a3-13f5d4b1a25d.jpg", heat:88, share:"21%", rank:"2025 黑五 · 身体 #37", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/fancy/36958cf5-2e30-4a09-8c71-8c372f2cd391.jpg", heat:88, share:"14%", rank:"2025 黑五 · 身体 #38", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/60ddd07b-d18b-43c5-9ddb-23d3672108ff.jpg", heat:88, share:"21%", rank:"2025 黑五 · 身体 #39", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/d49de8d9-4c5e-4daf-9bec-3a4c03920a3e.jpg", heat:88, share:"29%", rank:"2025 黑五 · 身体 #40", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"古铜粉", img:"https://img.kwcdn.com/product/open/dd21fe008bfd4e5bb04668b1b51569e2-goods.jpeg", heat:87, share:"12%", rank:"2025 黑五 · 身体 #41", feat:"立体修容，拉美肤色最吃这一款", stock:"正常" },
+    { c:"shenti", leaf:"闪粉", img:"https://img.kwcdn.com/product/fancy/9789f3c3-d12e-4bfa-9f48-8866db819439.jpg", heat:87, share:"11%", rank:"2025 黑五 · 身体 #42", feat:"身体与面部细闪，夜场派对氛围感拉满", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/afff34c6-328c-482c-932f-ce22b8065692.jpg", heat:87, share:"29%", rank:"2025 黑五 · 身体 #43", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"闪粉", img:"https://img.kwcdn.com/product/fancy/e5c3041c-a81b-4da4-94df-24df876706a0.jpg", heat:86, share:"11%", rank:"2025 黑五 · 身体 #44", feat:"身体与面部细闪，夜场派对氛围感拉满", stock:"正常" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/fancy/98e89d78-97fe-425d-84e3-992697da0d2b.jpg", heat:86, share:"13%", rank:"2025 黑五 · 身体 #45", feat:"脸部贴饰点睛，妆造完成度提升", stock:"正常" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/fancy/c1f28924-e10a-47d7-b516-3e9fb4892c10.jpg", heat:86, share:"13%", rank:"2025 黑五 · 身体 #46", feat:"脸部贴饰点睛，妆造完成度提升", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/28c7b679-a441-4d01-b11e-313cfb71eb82.jpg", heat:86, share:"21%", rank:"2025 黑五 · 身体 #47", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/a40a5aaa-955c-4547-adb9-efc405a6387d.jpg", heat:85, share:"29%", rank:"2025 黑五 · 身体 #48", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"古铜粉", img:"https://img.kwcdn.com/product/fancy/66eb3926-f6c3-4675-b0c6-c7e8769359cc.jpg", heat:85, share:"12%", rank:"2025 黑五 · 身体 #49", feat:"立体修容，拉美肤色最吃这一款", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/open/2024-08-22/1724322656584-7913268c38954a7686390a0ef20754e1-goods.jpeg", heat:85, share:"21%", rank:"2025 黑五 · 身体 #50", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/dd35aac6-1d47-4d2f-a7d6-7b6fec48e117.jpg", heat:84, share:"21%", rank:"2025 黑五 · 身体 #51", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"闪粉", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/2bd2369444f62b48a900543c0f520ad7.jpg", heat:84, share:"11%", rank:"2025 黑五 · 身体 #52", feat:"身体与面部细闪，夜场派对氛围感拉满", stock:"正常" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/fancy/8534a87a-efd9-4825-9925-e50137a0717b.jpg", heat:84, share:"13%", rank:"2025 黑五 · 身体 #53", feat:"脸部贴饰点睛，妆造完成度提升", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/8b6a76e9-7f4b-463c-89ba-854e77f47b46.jpg", heat:83, share:"29%", rank:"2025 黑五 · 身体 #54", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/a1d0041d-61c2-4bde-821a-5edcc68871f0.jpg", heat:83, share:"29%", rank:"2025 黑五 · 身体 #55", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/fancy/51d9865e-5cfd-4472-be03-7e062fdd4733.jpg", heat:83, share:"14%", rank:"2025 黑五 · 身体 #56", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/979848b3-f3e8-42b2-b24b-82cfc19660e2.jpg", heat:83, share:"21%", rank:"2025 黑五 · 身体 #57", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"闪粉", img:"https://img.kwcdn.com/product/fancy/8f95e9cd-30f8-4217-b73d-214382287604.jpg", heat:82, share:"11%", rank:"2025 黑五 · 身体 #58", feat:"身体与面部细闪，夜场派对氛围感拉满", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/567d42c9-cadc-4ee6-baeb-a45d6f93f547.jpg", heat:82, share:"21%", rank:"2025 黑五 · 身体 #59", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/10067674-819c-4cd3-8dbc-8732fc5255a9.jpg", heat:82, share:"29%", rank:"2025 黑五 · 身体 #60", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/a706aa76-8915-4a66-b4e0-11c621c28bba.jpg", heat:81, share:"29%", rank:"2025 黑五 · 身体 #61", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/e57eaf76-6708-4e73-b2cb-22c10ce3b1c5.jpg", heat:81, share:"29%", rank:"2025 黑五 · 身体 #62", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/open/1ffcb9a552094d63b17e5f791454b2ba-goods.jpeg", heat:81, share:"13%", rank:"2025 黑五 · 身体 #63", feat:"脸部贴饰点睛，妆造完成度提升", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/b5238df0-360c-4d37-a25f-c25c2e9084b8.jpg", heat:81, share:"21%", rank:"2025 黑五 · 身体 #64", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"古铜粉", img:"https://img.kwcdn.com/product/open/02a24c0c457c4d80b3f90cc49ecb3f39-goods.jpeg", heat:80, share:"12%", rank:"2025 黑五 · 身体 #65", feat:"立体修容，拉美肤色最吃这一款", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/open/5936dfa3f88647fc9195c1ca7ad59cb4-goods.jpeg", heat:80, share:"29%", rank:"2025 黑五 · 身体 #66", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/96756708-dab0-4672-94a1-063858488ad1.jpg", heat:80, share:"21%", rank:"2025 黑五 · 身体 #67", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"古铜粉", img:"https://img.kwcdn.com/product/fancy/87832717-4249-4730-9eed-394980d2cf59.jpg", heat:79, share:"12%", rank:"2025 黑五 · 身体 #68", feat:"立体修容，拉美肤色最吃这一款", stock:"正常" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/fancy/d7599033-cb59-44bf-8506-df34388cdf39.jpg", heat:79, share:"13%", rank:"2025 黑五 · 身体 #69", feat:"脸部贴饰点睛，妆造完成度提升", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/e224e694-25f2-4966-8969-c16b2c9b0034.jpg", heat:79, share:"29%", rank:"2025 黑五 · 身体 #70", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/21298da9-2df0-4059-8af8-19f2d4376d1c.jpg", heat:78, share:"29%", rank:"2025 黑五 · 身体 #71", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/73553977-ce82-4f38-8865-48850b4d778b.jpg", heat:78, share:"21%", rank:"2025 黑五 · 身体 #72", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"闪粉", img:"https://img.kwcdn.com/product/fancy/9eb13fdf-127f-4420-b932-cc8e2b0c200b.jpg", heat:78, share:"11%", rank:"2025 黑五 · 身体 #73", feat:"身体与面部细闪，夜场派对氛围感拉满", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/960a8cb2-e0c0-477a-b6a3-5ef3d97c2489.jpg", heat:78, share:"29%", rank:"2025 黑五 · 身体 #74", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/e3881769-5784-462d-803a-bb4c841dd387.jpg", heat:77, share:"29%", rank:"2025 黑五 · 身体 #75", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"古铜粉", img:"https://img.kwcdn.com/product/fancy/d025edc3-4f7f-44ed-97d8-c4cdc58717bc.jpg", heat:77, share:"12%", rank:"2025 黑五 · 身体 #76", feat:"立体修容，拉美肤色最吃这一款", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/b5a4e353-eef7-4fc3-973d-b1a20bad53b5.jpg", heat:77, share:"21%", rank:"2025 黑五 · 身体 #77", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/e4512117-c569-4731-a795-8b5f8d2238f2.jpg", heat:76, share:"21%", rank:"2025 黑五 · 身体 #78", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"古铜粉", img:"https://img.kwcdn.com/product/fancy/d42200ae-c618-431f-9206-c40f41897cdc.jpg", heat:76, share:"12%", rank:"2025 黑五 · 身体 #79", feat:"立体修容，拉美肤色最吃这一款", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/735a0523-9f93-4654-a5cb-386737396b15.jpg", heat:76, share:"29%", rank:"2025 黑五 · 身体 #80", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"闪粉", img:"https://img.kwcdn.com/product/fancy/7a810ccf-ae7b-4e0f-90a8-b716b70666e1.jpg", heat:76, share:"11%", rank:"2025 黑五 · 身体 #81", feat:"身体与面部细闪，夜场派对氛围感拉满", stock:"正常" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/fancy/bb63212f-4728-4a15-ab41-68034dbdf01b.jpg", heat:75, share:"14%", rank:"2025 黑五 · 身体 #82", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/12965e73-6285-4ca9-9a56-266979335055.jpg", heat:75, share:"21%", rank:"2025 黑五 · 身体 #83", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/17af2448-d4d8-40de-9213-d20fd056a1d4.jpg", heat:75, share:"21%", rank:"2025 黑五 · 身体 #84", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/901f193a-c719-4b36-ae17-92428c356489.jpg", heat:74, share:"29%", rank:"2025 黑五 · 身体 #85", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/314a820e-2633-418f-b79f-0cefa4774576.jpg", heat:74, share:"29%", rank:"2025 黑五 · 身体 #86", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/fancy/5b5199b5-4dc7-493d-9b7e-741fe169132f.jpg", heat:74, share:"13%", rank:"2025 黑五 · 身体 #87", feat:"脸部贴饰点睛，妆造完成度提升", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/16601b06-d423-42e7-b8cc-91418c3236bd.jpg", heat:74, share:"29%", rank:"2025 黑五 · 身体 #88", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"身体遮瑕", img:"https://img.kwcdn.com/product/fancy/a06ece5f-c4c7-468e-8505-e39b1d7e025b.jpg", heat:73, share:"14%", rank:"2025 黑五 · 身体 #89", feat:"遮瑕 + 提亮一体，妆造收尾刚需", stock:"正常" },
+    { c:"shenti", leaf:"古铜粉", img:"https://img.kwcdn.com/product/open/5f87da29ee5f4a979d9b4c7c4b39d2de-goods.jpeg", heat:73, share:"12%", rank:"2025 黑五 · 身体 #90", feat:"立体修容，拉美肤色最吃这一款", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/215b491f-2cd6-4aaa-864e-757d015ca776.jpg", heat:73, share:"21%", rank:"2025 黑五 · 身体 #91", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/open/0f9746821c7b4dc5a3543eb56474165b-goods.jpeg", heat:72, share:"21%", rank:"2025 黑五 · 身体 #92", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"古铜粉", img:"https://img.kwcdn.com/product/open/4169fb88339c4dbab8a701532b54a5b1-goods.jpeg", heat:72, share:"12%", rank:"2025 黑五 · 身体 #93", feat:"立体修容，拉美肤色最吃这一款", stock:"正常" },
+    { c:"shenti", leaf:"面部装饰贴", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/38d7e38c431b052ddd4134cb48003632.jpg", heat:72, share:"13%", rank:"2025 黑五 · 身体 #94", feat:"脸部贴饰点睛，妆造完成度提升", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/open/95d6a8a824bb4a8480687c411464be80-goods.jpeg", heat:71, share:"29%", rank:"2025 黑五 · 身体 #95", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"闪粉", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/7416ece6fd29f24d7189d254613672b6.jpg", heat:71, share:"11%", rank:"2025 黑五 · 身体 #96", feat:"身体与面部细闪，夜场派对氛围感拉满", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/af178a0f-0431-4719-9843-10f14d8deace.jpg", heat:71, share:"21%", rank:"2025 黑五 · 身体 #97", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"体绘", img:"https://img.kwcdn.com/product/fancy/796cff25-02e8-47c7-b7a6-e21dbb19e5d0.jpg", heat:71, share:"21%", rank:"2025 黑五 · 身体 #98", feat:"节日彩绘套装，多色一盘好拍", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/fancy/435c4509-5f98-4982-9c67-5f131c8827a3.jpg", heat:70, share:"29%", rank:"2025 黑五 · 身体 #99", feat:"低客单高氛围，凑单加购首选", stock:"正常" },
+    { c:"shenti", leaf:"纹身贴", img:"https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/210b4fa05386dfec1954904277c689a0.jpg", heat:70, share:"29%", rank:"2025 黑五 · 身体 #100", feat:"低客单高氛围，凑单加购首选", stock:"正常" }
+  ];
+
+  function renderProducts(cat){
+    var grid = document.getElementById("pgrid");
+    if(!grid) return;
+    var list = cat === "all" ? PRODUCTS : PRODUCTS.filter(function(p){ return p.c === cat; });
+    grid.innerHTML = list.map(function(p, i){
+      var growCls = " old";
+      var growTxt = "在榜占比 " + p.share;
+      var stockCls = (p.stock === "正常" || p.stock === "经典款") ? " ok" : "";
+      return '<article class="pcard" data-cat="' + p.c + '" style="transition-delay:' + Math.min(i * 45, 360) + 'ms">' +
+        '<div class="pcard__media">' +
+          '<span class="pcard__rank">' + p.rank + '</span>' +
+          '<span class="pcard__heat">' + p.heat + '<small>热度</small></span>' +
+          '<img src="' + p.img + '" alt="' + p.leaf + ' 爆款商品首图" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display=\'none\';var pw=this.parentNode;pw.classList.add(\'noimg\');pw.setAttribute(\'data-fb\',\'' + p.leaf + '\')">' +
+        '</div>' +
+        '<div class="pcard__body">' +
+          '<div class="pcard__leaf"><i></i>' + p.leaf + '</div>' +
+          '<div class="pcard__feat">' + p.feat + '</div>' +
+          '<div class="pcard__row">' +
+            '<span class="pcard__grow' + growCls + '">' + growTxt + '</span>' +
+            '<span class="pcard__stock' + stockCls + '">' + p.stock + '</span>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+    }).join("");
+
+    /* 入场动画：仅首批做错峰，其余直接显示（清单全量 300 款） */
+    requestAnimationFrame(function(){
+      var cards = grid.querySelectorAll(".pcard");
+      Array.prototype.forEach.call(cards, function(el, i){
+        if(i < 18){
+          setTimeout(function(){
+            el.classList.add("in");
+            setTimeout(function(){ el.style.transitionDelay = "0ms"; }, 700);
+          }, 20 + i * 40);
+        }else{
+          el.classList.add("in");
+        }
+      });
+    });
+  }
+
+  /* ================= 交互 ================= */
+  function bindTabs(){
+    var tabs = document.getElementById("tabs");
+    if(!tabs) return;
+    tabs.addEventListener("click", function(e){
+      var btn = e.target.closest(".tab");
+      if(!btn) return;
+      Array.prototype.forEach.call(tabs.querySelectorAll(".tab"), function(t){ t.classList.remove("on"); });
+      btn.classList.add("on");
+      renderProducts(btn.dataset.cat);
+    });
+  }
+
+  function bindStockProgress(){
+    var fill = document.getElementById("slotFill");
+    if(fill) setTimeout(function(){ fill.style.width = "89%"; }, 500);
+  }
+
+  function bindLock(){
+    var btn = document.getElementById("lockSlot");
+    if(!btn) return;
+    var num = 178;
+    btn.addEventListener("click", function(){
+      if(num >= 200){
+        toast("首批坑位已满，请联系对接运营进入候补名单");
+        return;
+      }
+      num += 1;
+      document.getElementById("slotNum").textContent = num;
+      var pct = Math.min(100, num / 200 * 100);
+      document.getElementById("slotFill").style.width = pct.toFixed(1) + "%";
+      var left = 200 - num;
+      var hint = document.querySelector(".slot-hint");
+      if(hint) hint.innerHTML = "仅剩 <b>" + left + "</b> 个坑位 · 已记录你的意向，我们会按顺序排期";
+      toast("已锁定 1 个意向坑位（第 " + num + " 位），请尽快完成备货与上架");
+    });
+  }
+
+  function bindCopy(){
+    var btn = document.getElementById("copyList");
+    if(!btn) return;
+    btn.addEventListener("click", function(){
+      var lines = ["2025 拉美黑五 · 必上款画像清单", "节点：11.20 上新截止 / 11.27 开抢 / 11.28 峰值 / 11.30 网一 / 12.01 二次峰值", ""];
+      PRODUCTS.forEach(function(p, i){
+        lines.push((i + 1) + ". [" + p.leaf + "] 热度 " + p.heat + " · 在榜占比 " + p.share + " — " + p.feat);
+      });
+      var text = lines.join("\n");
+      var done = function(){ toast("必上款清单已复制，可直接发给你的运营群"); };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done).catch(function(){ fallbackCopy(text, done); });
+      }else{
+        fallbackCopy(text, done);
+      }
+    });
+  }
+
+  function fallbackCopy(text, cb){
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try{ document.execCommand("copy"); cb(); }catch(e){ toast("复制失败，请手动选择清单内容"); }
+    document.body.removeChild(ta);
+  }
+
+  var toastTimer = null;
+  function toast(msg){
+    var el = document.getElementById("toast");
+    document.getElementById("toastTxt").textContent = msg;
+    el.classList.add("on");
+    if(toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ el.classList.remove("on"); }, 2800);
+  }
+
+  function bindJump(){
+    document.addEventListener("click", function(e){
+      var t = e.target.closest("[data-jump]");
+      if(!t) return;
+      e.preventDefault();
+      var el = document.querySelector(t.dataset.jump);
+      if(el) el.scrollIntoView({ behavior:"smooth", block:"start" });
+    });
+  }
+
+  function bindScroll(){
+    var toTop = document.getElementById("toTop");
+    window.addEventListener("scroll", function(){
+      if(window.scrollY > 500){ toTop.classList.add("show"); } else { toTop.classList.remove("show"); }
+    }, { passive:true });
+    toTop.addEventListener("click", function(){ window.scrollTo({ top:0, behavior:"smooth" }); });
+  }
+
+  function bindReveal(){
+    var els = document.querySelectorAll(".reveal");
+    if(!("IntersectionObserver" in window)){
+      Array.prototype.forEach.call(els, function(el){ el.classList.add("in"); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        en.target.classList.add("in");
+        if(en.target.querySelector(".fill")){
+          Array.prototype.forEach.call(en.target.querySelectorAll(".fill"), function(f){
+            f.style.width = f.dataset.w + "%";
+          });
+        }
+        if(en.target.querySelector(".col")){
+          Array.prototype.forEach.call(en.target.querySelectorAll(".col"), function(c){
+            c.style.height = c.dataset.h + "%";
+          });
+        }
+        io.unobserve(en.target);
+      });
+    }, { threshold:0.18, rootMargin:"0px 0px -8% 0px" });
+
+    Array.prototype.forEach.call(els, function(el){ io.observe(el); });
+  }
+
+  function buildTicker(){
+    var track = document.getElementById("tickerTrack");
+    if(!track) return;
+    var items = [
+      "11.28 GMV 峰值 <b>6.2x</b>",
+      "上新截止 <b>11.20</b>",
+      "12.01 二次峰值 <b>5.9x</b>",
+      "错过再等一年 · 坑位先到先得"
+    ];
+    var html = items.map(function(t){ return '<span class="ticker-item"><i></i>' + t + '</span>'; }).join("");
+    track.innerHTML = html + html;
+  }
+
+  function buildWatermark(){
+    var box = document.getElementById("watermark");
+    if(!box) return;
+    var txt = "欢迎联系迢之VX：tiaozhiovo";
+    var txt2 = "迢之分享财富秘籍 · 请勿外传";
+    var one = "";
+    for(var i = 0; i < 12; i++){ one += "<span>" + (i % 2 ? txt2 : txt) + "</span>"; }
+    box.innerHTML = one + one + one + one + one + one;
+  }
+
+  /* ================= 初始化 ================= */
+  document.addEventListener("DOMContentLoaded", function(){
+    buildTicker();
+    buildWatermark();
+    renderProducts("all");
+    drawChart();
+    bindChartHover();
+    bindTabs();
+    bindLock();
+    bindCopy();
+    bindJump();
+    bindScroll();
+    bindReveal();
+    bindStockProgress();
+    tick();
+    setInterval(tick, 1000);
+    window.addEventListener("resize", function(){
+      clearTimeout(window.__rz);
+      window.__rz = setTimeout(drawChart, 220);
+    });
+  });
+})();
+</script>
+</body>
+</html>
